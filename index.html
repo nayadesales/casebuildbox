@@ -1161,11 +1161,6 @@ body {
   background:
     rgba(255,255,255,.48);
 
-  /*
-    IMPORTANTE:
-    No desktop mantemos o box intacto.
-  */
-
   overflow: visible;
 
 }
@@ -1699,10 +1694,6 @@ body {
 @media (max-width: 767px) {
 
 
-  /* -------------------------------------------------------
-     ESTRUTURA GERAL
-  ------------------------------------------------------- */
-
   html,
   body {
 
@@ -1741,13 +1732,6 @@ body {
   }
 
 
-  /*
-     No mobile os slides deixam de ser
-     "janelas de apresentação".
-
-     Cada um passa a ser uma página vertical.
-  */
-
   .slide {
 
     position: relative;
@@ -1778,9 +1762,9 @@ body {
   }
 
 
-  /* -------------------------------------------------------
+  /* =======================================================
      CANVAS MOBILE
-  ------------------------------------------------------- */
+  ======================================================= */
 
   .canvas {
 
@@ -1801,16 +1785,11 @@ body {
     padding:
       max(34px, env(safe-area-inset-top))
       22px
-      88px
+      125px
       22px;
 
   }
 
-
-  /*
-     Remove a linha de footer que no mobile
-     não deve atravessar o conteúdo.
-  */
 
   .canvas::after {
 
@@ -1818,14 +1797,14 @@ body {
 
     right: 22px;
 
-    bottom: 67px;
+    bottom: 105px;
 
   }
 
 
-  /* -------------------------------------------------------
+  /* =======================================================
      TIPOGRAFIA
-  ------------------------------------------------------- */
+  ======================================================= */
 
   .eyebrow {
 
@@ -1858,9 +1837,9 @@ body {
   }
 
 
-  /* -------------------------------------------------------
+  /* =======================================================
      FOOTER
-  ------------------------------------------------------- */
+  ======================================================= */
 
   .footer {
 
@@ -1870,7 +1849,7 @@ body {
 
     right: 22px;
 
-    bottom: 27px;
+    bottom: 29px;
 
     height: auto;
 
@@ -1899,62 +1878,154 @@ body {
   }
 
 
-  /* -------------------------------------------------------
-     NAVEGAÇÃO
-  ------------------------------------------------------- */
+  /* =======================================================
+     NAVEGAÇÃO MOBILE
+  ======================================================= */
 
   .mobile-navigation {
 
     position: absolute;
 
-    left: 50%;
+    left: 22px;
 
-    bottom: 52px;
+    right: 22px;
 
-    transform: translateX(-50%);
+    bottom: 65px;
 
-    z-index: 30;
+    z-index: 50;
 
     display: flex;
 
     align-items: center;
 
-    justify-content: center;
+    justify-content: space-between;
 
-    gap: 9px;
+    gap: 10px;
 
     pointer-events: none;
 
   }
 
 
-  .mobile-navigation span {
+  .mobile-navigation button {
 
-    width: 5px;
+    appearance: none;
 
-    height: 5px;
+    -webkit-appearance: none;
 
-    border-radius: 50%;
+    border: 1px solid rgba(36,35,31,.14);
 
-    background: rgba(36,35,31,.25);
+    background:
+      rgba(244,240,232,.94);
 
-  }
+    color: var(--ink);
 
+    min-width: 102px;
 
-  .mobile-navigation span.active {
+    height: 38px;
 
-    width: 18px;
+    padding: 0 13px;
 
     border-radius: 999px;
 
-    background: var(--terracotta-dark);
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: .04em;
+
+    box-shadow:
+      0 5px 18px rgba(36,35,31,.08);
+
+    pointer-events: auto;
+
+    cursor: pointer;
+
+    transition:
+      transform .18s ease,
+      opacity .18s ease,
+      background .18s ease;
 
   }
 
 
-  /* -------------------------------------------------------
+  .mobile-navigation button:active {
+
+    transform: scale(.96);
+
+  }
+
+
+  .mobile-navigation button.disabled {
+
+    opacity: .28;
+
+    pointer-events: none;
+
+  }
+
+
+  .mobile-navigation .nav-arrow {
+
+    font-size: 15px;
+
+    line-height: 1;
+
+    font-weight: 500;
+
+  }
+
+
+  .mobile-navigation .nav-center {
+
+    flex: 1;
+
+    min-width: 42px;
+
+    text-align: center;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: .08em;
+
+    color: var(--muted);
+
+    white-space: nowrap;
+
+  }
+
+
+  .mobile-navigation .next-button {
+
+    background:
+      var(--ink);
+
+    color:
+      var(--paper);
+
+    border-color:
+      var(--ink);
+
+  }
+
+
+  /* =======================================================
      CAPA MOBILE
-  ------------------------------------------------------- */
+  ======================================================= */
 
   .cover {
 
@@ -2037,7 +2108,7 @@ body {
 
     left: 22px;
 
-    bottom: 92px;
+    bottom: 135px;
 
     font-size: 14px;
 
@@ -2046,9 +2117,9 @@ body {
   }
 
 
-  /* -------------------------------------------------------
+  /* =======================================================
      CONTEXTO
-  ------------------------------------------------------- */
+  ======================================================= */
 
   .context {
 
@@ -2059,7 +2130,7 @@ body {
 
   .context .canvas {
 
-    padding-bottom: 105px;
+    padding-bottom: 140px;
 
   }
 
@@ -2236,9 +2307,9 @@ body {
   }
 
 
-  /* -------------------------------------------------------
+  /* =======================================================
      PRIORIZAÇÃO
-  ------------------------------------------------------- */
+  ======================================================= */
 
   .prioritization-content {
 
@@ -2278,11 +2349,6 @@ body {
 
   }
 
-
-  /*
-     No mobile o eixo vertical deixa de ficar
-     para fora da área útil.
-  */
 
   .axis-y {
 
@@ -2429,9 +2495,9 @@ body {
   }
 
 
-  /* -------------------------------------------------------
+  /* =======================================================
      EXECUÇÃO
-  ------------------------------------------------------- */
+  ======================================================= */
 
   .execution-content {
 
@@ -2504,10 +2570,6 @@ body {
 
   }
 
-
-  /*
-     Checkpoint vira um divisor vertical.
-  */
 
   .checkpoint-center {
 
@@ -2595,9 +2657,9 @@ body {
   }
 
 
-  /* -------------------------------------------------------
+  /* =======================================================
      CONCLUSÃO
-  ------------------------------------------------------- */
+  ======================================================= */
 
   .final-content {
 
@@ -2731,9 +2793,9 @@ body {
   }
 
 
-  /* -------------------------------------------------------
+  /* =======================================================
      TRANSIÇÃO
-  ------------------------------------------------------- */
+  ======================================================= */
 
   .slide {
 
@@ -2770,7 +2832,6 @@ body {
 
 @media (max-width: 380px) {
 
-
   .canvas {
 
     padding-left: 18px;
@@ -2794,6 +2855,26 @@ body {
     left: 18px;
 
     right: 18px;
+
+  }
+
+
+  .mobile-navigation {
+
+    left: 18px;
+
+    right: 18px;
+
+  }
+
+
+  .mobile-navigation button {
+
+    min-width: 88px;
+
+    padding: 0 10px;
+
+    font-size: 8px;
 
   }
 
@@ -3110,8 +3191,6 @@ body {
                 de engajamento ainda não validada.
               </span>
             </li>
-
-           
 
           </ul>
 
@@ -3492,8 +3571,6 @@ body {
     <div class="execution-content">
 
 
-      <!-- SPRINT 1 -->
-
       <div class="sprint-box">
 
         <span class="tag sage">
@@ -3535,8 +3612,6 @@ body {
       </div>
 
 
-      <!-- CHECKPOINT -->
-
       <div class="checkpoint-center">
 
         <div class="checkpoint-circle">
@@ -3559,8 +3634,6 @@ body {
 
       </div>
 
-
-      <!-- SPRINT 2 -->
 
       <div class="sprint-box">
 
@@ -3598,8 +3671,6 @@ body {
 
       </div>
 
-
-      <!-- CENÁRIOS -->
 
       <div class="scenario-area">
 
@@ -3845,10 +3916,10 @@ let currentSlide = 0;
 
 
 /* =========================================================
-   INDICADORES MOBILE
+   CRIAR NAVEGAÇÃO MOBILE
 ========================================================= */
 
-function createNavigationDots() {
+function createNavigation() {
 
   const navigations =
     document.querySelectorAll(
@@ -3862,26 +3933,101 @@ function createNavigationDots() {
       navigation.innerHTML = "";
 
 
-      slides.forEach(
-        (_, index) => {
+      /*
+         BOTÃO ANTERIOR
+      */
 
-          const dot =
-            document.createElement("span");
+      const previousButton =
+        document.createElement("button");
+
+      previousButton.type = "button";
+
+      previousButton.className =
+        "previous-button";
+
+      previousButton.setAttribute(
+        "aria-label",
+        "Ir para o slide anterior"
+      );
+
+      previousButton.innerHTML = `
+        <span class="nav-arrow">←</span>
+        <span>Anterior</span>
+      `;
 
 
-          dot.dataset.slide = index;
+      /*
+         INDICADOR CENTRAL
+      */
+
+      const center =
+        document.createElement("span");
+
+      center.className =
+        "nav-center";
 
 
-          if (index === currentSlide) {
+      /*
+         BOTÃO PRÓXIMO
+      */
 
-            dot.classList.add("active");
+      const nextButton =
+        document.createElement("button");
 
-          }
+      nextButton.type = "button";
+
+      nextButton.className =
+        "next-button";
+
+      nextButton.setAttribute(
+        "aria-label",
+        "Ir para o próximo slide"
+      );
+
+      nextButton.innerHTML = `
+        <span>Próximo</span>
+        <span class="nav-arrow">→</span>
+      `;
 
 
-          navigation.appendChild(dot);
+      /*
+         EVENTOS DOS BOTÕES
+      */
+
+      previousButton.addEventListener(
+        "click",
+        function(event) {
+
+          event.stopPropagation();
+
+          previousSlide();
 
         }
+      );
+
+
+      nextButton.addEventListener(
+        "click",
+        function(event) {
+
+          event.stopPropagation();
+
+          nextSlide();
+
+        }
+      );
+
+
+      navigation.appendChild(
+        previousButton
+      );
+
+      navigation.appendChild(
+        center
+      );
+
+      navigation.appendChild(
+        nextButton
       );
 
     }
@@ -3891,25 +4037,96 @@ function createNavigationDots() {
 
 
 /* =========================================================
-   ATUALIZAR INDICADORES
+   ATUALIZAR NAVEGAÇÃO
 ========================================================= */
 
-function updateNavigationDots() {
+function updateNavigation() {
 
-  document
-    .querySelectorAll(
-      ".mobile-navigation span"
-    )
-    .forEach(
-      (dot, index) => {
+  const navigations =
+    document.querySelectorAll(
+      ".mobile-navigation"
+    );
 
-        dot.classList.toggle(
-          "active",
-          index === currentSlide
+
+  navigations.forEach(
+    navigation => {
+
+      const previousButton =
+        navigation.querySelector(
+          ".previous-button"
+        );
+
+      const nextButton =
+        navigation.querySelector(
+          ".next-button"
+        );
+
+      const center =
+        navigation.querySelector(
+          ".nav-center"
+        );
+
+
+      /*
+         INDICADOR
+      */
+
+      center.textContent =
+        String(currentSlide + 1)
+          .padStart(2, "0")
+        + " / "
+        + String(slides.length)
+          .padStart(2, "0");
+
+
+      /*
+         PRIMEIRO SLIDE
+      */
+
+      if (
+        currentSlide === 0
+      ) {
+
+        previousButton.classList.add(
+          "disabled"
         );
 
       }
-    );
+
+      else {
+
+        previousButton.classList.remove(
+          "disabled"
+        );
+
+      }
+
+
+      /*
+         ÚLTIMO SLIDE
+      */
+
+      if (
+        currentSlide ===
+        slides.length - 1
+      ) {
+
+        nextButton.classList.add(
+          "disabled"
+        );
+
+      }
+
+      else {
+
+        nextButton.classList.remove(
+          "disabled"
+        );
+
+      }
+
+    }
+  );
 
 }
 
@@ -3950,15 +4167,15 @@ function showSlide(index) {
   currentSlide = index;
 
 
-  updateNavigationDots();
+  updateNavigation();
 
 
   /*
-     No desktop, mantém a apresentação
-     sempre centralizada.
+     No mobile, sempre retorna
+     para o topo da página.
 
-     No mobile, retorna para o topo
-     da nova página.
+     O conteúdo de cada slide pode
+     continuar tendo qualquer altura.
   */
 
   if (
@@ -3981,6 +4198,16 @@ function showSlide(index) {
 
 function nextSlide() {
 
+  if (
+    currentSlide >=
+    slides.length - 1
+  ) {
+
+    return;
+
+  }
+
+
   showSlide(
     currentSlide + 1
   );
@@ -3993,6 +4220,15 @@ function nextSlide() {
 ========================================================= */
 
 function previousSlide() {
+
+  if (
+    currentSlide <= 0
+  ) {
+
+    return;
+
+  }
+
 
   showSlide(
     currentSlide - 1
@@ -4074,13 +4310,14 @@ document.addEventListener(
   function(event) {
 
     /*
-       Não interfere nos elementos
+       Não interfere nos controles
+       de navegação nem elementos
        interativos.
     */
 
     if (
       event.target.closest(
-        "button, a, input, textarea, select"
+        "button, a, input, textarea, select, .mobile-navigation"
       )
     ) {
 
@@ -4090,11 +4327,22 @@ document.addEventListener(
 
 
     /*
-       No mobile, o toque é dividido
-       em esquerda / direita.
+       MOBILE
 
-       Isso permite navegar sem
-       precisar de botão.
+       Mantemos o tap como forma
+       alternativa de navegação.
+
+       Área direita:
+       próximo.
+
+       Área esquerda:
+       anterior.
+
+       Área central:
+       não faz nada.
+
+       Isso evita que um toque acidental
+       no conteúdo faça o slide mudar.
     */
 
     if (
@@ -4109,13 +4357,17 @@ document.addEventListener(
         event.clientX;
 
 
-      if (x > width * .58) {
+      if (
+        x > width * .68
+      ) {
 
         nextSlide();
 
       }
 
-      else if (x < width * .42) {
+      else if (
+        x < width * .32
+      ) {
 
         previousSlide();
 
@@ -4127,7 +4379,9 @@ document.addEventListener(
 
 
     /*
-       Desktop:
+       DESKTOP
+
+       Mantém a lógica anterior:
        metade direita = próximo
        metade esquerda = anterior
     */
@@ -4223,11 +4477,8 @@ document.addEventListener(
 
 
     /*
-       Se o movimento vertical for maior,
-       não tratamos como swipe de slide.
-
-       Isso é importante para permitir
-       rolagem vertical normal.
+       Movimento vertical é
+       rolagem normal.
     */
 
     if (
@@ -4241,7 +4492,7 @@ document.addEventListener(
 
 
     /*
-       Distância mínima horizontal
+       Distância mínima
     */
 
     if (
@@ -4254,7 +4505,7 @@ document.addEventListener(
 
 
     /*
-       Evita gestos muito lentos.
+       Evita swipe muito lento
     */
 
     if (
@@ -4266,6 +4517,10 @@ document.addEventListener(
     }
 
 
+    /*
+       Esquerda → próximo
+    */
+
     if (
       distanceX < 0
     ) {
@@ -4273,6 +4528,10 @@ document.addEventListener(
       nextSlide();
 
     }
+
+    /*
+       Direita → anterior
+    */
 
     else {
 
@@ -4288,46 +4547,6 @@ document.addEventListener(
 
 
 /* =========================================================
-   CLIQUE NOS DOTS
-========================================================= */
-
-document.addEventListener(
-  "click",
-  function(event) {
-
-    const dot =
-      event.target.closest(
-        ".mobile-navigation span"
-      );
-
-
-    if (!dot) {
-
-      return;
-
-    }
-
-
-    const index =
-      Number(dot.dataset.slide);
-
-
-    if (
-      Number.isNaN(index)
-    ) {
-
-      return;
-
-    }
-
-
-    showSlide(index);
-
-  }
-);
-
-
-/* =========================================================
    RESIZE
 ========================================================= */
 
@@ -4335,13 +4554,7 @@ window.addEventListener(
   "resize",
   function() {
 
-    /*
-       Mantém o slide atual
-       coerente após mudar
-       entre desktop e mobile.
-    */
-
-    updateNavigationDots();
+    updateNavigation();
 
   }
 );
@@ -4351,7 +4564,7 @@ window.addEventListener(
    INICIALIZAÇÃO
 ========================================================= */
 
-createNavigationDots();
+createNavigation();
 
 showSlide(0);
 
