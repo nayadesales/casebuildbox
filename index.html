@@ -512,273 +512,7 @@ body {
 
 
 /* =========================================================
-   SLIDE 02 — CONTEXTO
-========================================================= */
-
-.context-shape {
-
-  position: absolute;
-
-  width: 400px;
-  height: 400px;
-
-  right: -150px;
-  top: -140px;
-
-  border-radius: 50%;
-
-  background: var(--sand);
-
-  opacity: .42;
-
-}
-
-
-.context-title {
-
-  max-width: 920px;
-
-  font-size:
-    clamp(35px, 3.7vw, 56px);
-
-  margin-bottom: 28px;
-
-}
-
-
-.context-layout {
-
-  position: relative;
-
-  z-index: 5;
-
-  height: calc(100% - 184px);
-
-  min-height: 430px;
-
-  display: grid;
-
-  grid-template-columns:
-    minmax(240px, .72fr)
-    minmax(550px, 1.65fr);
-
-  gap: 38px;
-
-}
-
-
-.context-left {
-
-  display: flex;
-
-  flex-direction: column;
-
-  justify-content: flex-start;
-
-  padding-top: 18px;
-
-}
-
-
-.context-big {
-
-  font-size:
-    clamp(68px, 7vw, 105px);
-
-  line-height: .85;
-
-  letter-spacing: -.07em;
-
-  font-weight: 750;
-
-  color: var(--terracotta-dark);
-
-}
-
-
-.context-big-label {
-
-  margin-top: 10px;
-
-  font-size: 15px;
-
-  font-weight: 700;
-
-  color: var(--muted);
-
-}
-
-
-.context-description {
-
-  max-width: 350px;
-
-  margin-top: 27px;
-
-  font-size: 15px;
-
-  line-height: 1.48;
-
-  color: var(--ink);
-
-}
-
-
-.context-left > div:last-child {
-
-  margin-top: 25px !important;
-
-}
-
-
-.context-right {
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  grid-template-rows: 1fr auto;
-
-  gap: 14px;
-
-  min-height: 0;
-
-}
-
-
-.context-card {
-
-  background: rgba(255,255,255,.47);
-
-  border: 1px solid var(--line);
-
-  border-radius: 17px;
-
-  padding: 19px 20px;
-
-  min-height: 0;
-
-  overflow: hidden;
-
-}
-
-
-.context-card.problem {
-
-  border-top: 4px solid var(--sage);
-
-}
-
-
-.context-card.request {
-
-  border-top: 4px solid var(--terracotta);
-
-}
-
-
-.context-card-head {
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  gap: 12px;
-
-  margin-bottom: 13px;
-
-}
-
-
-.context-card h3 {
-
-  font-size: 16px;
-
-  letter-spacing: -.02em;
-
-}
-
-
-.context-card ul {
-
-  list-style: none;
-
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 10px;
-
-}
-
-
-.context-card li {
-
-  font-size: 11px;
-
-  line-height: 1.28;
-
-  color: var(--muted);
-
-}
-
-
-.context-card li strong {
-
-  font-size: 11px;
-
-  color: var(--ink);
-
-}
-
-
-.context-principle {
-
-  grid-column: 1 / -1;
-
-  display: grid;
-
-  grid-template-columns: auto 1fr;
-
-  align-items: center;
-
-  gap: 18px;
-
-  padding: 13px 17px;
-
-  border-radius: 13px;
-
-  background: var(--ink);
-
-  color: var(--paper);
-
-}
-
-
-.context-principle strong {
-
-  font-size: 13px;
-
-  white-space: nowrap;
-
-}
-
-
-.context-principle span {
-
-  font-size: 11px;
-
-  line-height: 1.3;
-
-  color: rgba(244,240,232,.75);
-
-}
-
-
-/* =========================================================
-   SLIDE 03 — PRIORIZAÇÃO
+   SLIDE 02 — PRIORIZAÇÃO
 ========================================================= */
 
 .prioritization-content {
@@ -787,17 +521,17 @@ body {
 
   z-index: 5;
 
-  height: calc(100% - 174px);
+  height: calc(100% - 170px);
 
   min-height: 430px;
 
   display: grid;
 
   grid-template-columns:
-    minmax(470px, 1.08fr)
-    minmax(360px, .92fr);
+    minmax(460px, 1.15fr)
+    minmax(390px, .85fr);
 
-  gap: 38px;
+  gap: 42px;
 
 }
 
@@ -945,7 +679,7 @@ body {
   color: var(--ink);
 
   background:
-    rgba(244,240,232,.88);
+    rgba(244,240,232,.9);
 
   padding: 2px 4px;
 
@@ -964,25 +698,29 @@ body {
 
   gap: 18px;
 
-  margin-top: 20px;
+  margin-top: 22px;
 
 }
 
 
 .matrix-note-text {
 
-  max-width: 430px;
+  max-width: 440px;
 
   font-size: 10px;
 
-  line-height: 1.4;
+  line-height: 1.45;
 
   color: var(--muted);
 
 }
 
 
-.decision-area {
+/* ---------------------------------------------------------
+   PRIORIZAÇÃO — PAINEL DIREITO
+--------------------------------------------------------- */
+
+.priority-panel {
 
   display: flex;
 
@@ -990,22 +728,178 @@ body {
 
   min-width: 0;
 
-  min-height: 0;
+}
+
+
+.priority-intro {
+
+  font-size: 13px;
+
+  line-height: 1.45;
+
+  color: var(--muted);
+
+  max-width: 430px;
+
+  margin-bottom: 18px;
 
 }
 
 
-.decision-intro {
+.priority-rules {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+}
+
+
+.priority-rule {
+
+  display: grid;
+
+  grid-template-columns: 30px 1fr;
+
+  gap: 10px;
+
+  padding: 11px 13px;
+
+  border-radius: 11px;
+
+  background:
+    rgba(255,255,255,.48);
+
+  border: 1px solid var(--line);
+
+}
+
+
+.priority-rule-number {
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  color: var(--light-muted);
+
+  padding-top: 3px;
+
+}
+
+
+.priority-rule strong {
+
+  display: block;
 
   font-size: 12px;
 
-  line-height: 1.4;
+  margin-bottom: 3px;
+
+}
+
+
+.priority-rule span {
+
+  display: block;
+
+  font-size: 10px;
+
+  line-height: 1.35;
 
   color: var(--muted);
 
-  margin-bottom: 15px;
+}
 
-  max-width: 470px;
+
+.priority-summary {
+
+  margin-top: auto;
+
+  padding: 15px 16px;
+
+  border-radius: 13px;
+
+  background: var(--ink);
+
+  color: var(--paper);
+
+}
+
+
+.priority-summary strong {
+
+  display: block;
+
+  font-size: 13px;
+
+  margin-bottom: 6px;
+
+}
+
+
+.priority-summary span {
+
+  font-size: 10px;
+
+  line-height: 1.4;
+
+  color: rgba(244,240,232,.72);
+
+}
+
+
+/* =========================================================
+   SLIDE 03 — DECISÃO + COMUNICAÇÃO
+========================================================= */
+
+.decision-communication {
+
+  position: relative;
+
+  z-index: 5;
+
+  height: calc(100% - 168px);
+
+  min-height: 430px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(390px, .95fr)
+    minmax(480px, 1.05fr);
+
+  gap: 42px;
+
+}
+
+
+.decision-column {
+
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+.section-kicker {
+
+  font-size: 9px;
+
+  text-transform: uppercase;
+
+  letter-spacing: .1em;
+
+  font-weight: 800;
+
+  color: var(--muted);
+
+  margin-bottom: 12px;
 
 }
 
@@ -1016,7 +910,7 @@ body {
 
   flex-direction: column;
 
-  gap: 10px;
+  gap: 9px;
 
 }
 
@@ -1026,7 +920,7 @@ body {
   display: grid;
 
   grid-template-columns:
-    28px auto 1fr;
+    27px 82px 1fr;
 
   align-items: start;
 
@@ -1061,7 +955,7 @@ body {
 
   font-size: 13px;
 
-  margin-top: 4px;
+  margin-top: 3px;
 
 }
 
@@ -1070,7 +964,7 @@ body {
 
   font-size: 10px;
 
-  line-height: 1.32;
+  line-height: 1.35;
 
   color: var(--muted);
 
@@ -1083,7 +977,7 @@ body {
 
   margin-top: auto;
 
-  padding-top: 14px;
+  padding-top: 13px;
 
   border-top: 1px solid var(--line);
 
@@ -1116,34 +1010,165 @@ body {
 }
 
 
+/* ---------------------------------------------------------
+   COMUNICAÇÃO
+--------------------------------------------------------- */
+
+.communication-column {
+
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+.communication-intro {
+
+  font-size: 12px;
+
+  line-height: 1.45;
+
+  color: var(--muted);
+
+  margin-bottom: 15px;
+
+  max-width: 500px;
+
+}
+
+
+.stakeholders {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 9px;
+
+}
+
+
+.stakeholder {
+
+  padding: 13px 14px;
+
+  border-radius: 11px;
+
+  border: 1px solid var(--line);
+
+  background:
+    rgba(255,255,255,.42);
+
+}
+
+
+.stakeholder h3 {
+
+  font-size: 11px;
+
+  margin-bottom: 4px;
+
+}
+
+
+.stakeholder p {
+
+  font-size: 9px;
+
+  line-height: 1.35;
+
+  color: var(--muted);
+
+}
+
+
+.communication-quote {
+
+  margin-top: 13px;
+
+  padding: 17px;
+
+  border-radius: 15px;
+
+  background:
+    rgba(182,161,173,.27);
+
+  border: 1px solid rgba(105,86,97,.15);
+
+}
+
+
+.communication-quote blockquote {
+
+  margin-top: 11px;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+
+  letter-spacing: -.01em;
+
+}
+
+
+.communication-note {
+
+  margin-top: 12px;
+
+  padding-top: 10px;
+
+  border-top: 1px solid rgba(36,35,31,.12);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  color: var(--mauve-dark);
+
+}
+
+
 /* =========================================================
-   SLIDE 04 — EXECUÇÃO
+   SLIDE 04 — EXECUÇÃO + RISCOS
 ========================================================= */
 
-.execution-content {
+.execution-risk {
 
   position: relative;
 
   z-index: 5;
 
-  height: calc(100% - 176px);
+  height: calc(100% - 170px);
 
   min-height: 430px;
 
   display: grid;
 
   grid-template-columns:
-    minmax(260px, 1fr)
-    160px
-    minmax(260px, 1fr);
+    minmax(380px, .9fr)
+    minmax(480px, 1.1fr);
 
-  grid-template-rows:
-    minmax(280px, 1fr)
-    120px;
+  gap: 38px;
 
-  column-gap: 28px;
+}
 
-  row-gap: 20px;
+
+/* ---------------------------------------------------------
+   EXECUÇÃO
+--------------------------------------------------------- */
+
+.execution-column {
+
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
 
 }
 
@@ -1152,21 +1177,19 @@ body {
 
   min-width: 0;
 
-  padding: 22px;
+  padding: 17px;
 
-  border-radius: 18px;
+  border-radius: 15px;
 
   border: 1px solid var(--line);
 
   background:
     rgba(255,255,255,.48);
 
-  overflow: visible;
-
 }
 
 
-.sprint-box:first-child {
+.sprint-box.sprint-one {
 
   border-top:
     5px solid var(--sage);
@@ -1174,7 +1197,7 @@ body {
 }
 
 
-.sprint-box:last-of-type {
+.sprint-box.sprint-two {
 
   border-top:
     5px solid var(--mauve);
@@ -1184,9 +1207,9 @@ body {
 
 .sprint-box h3 {
 
-  font-size: 19px;
+  font-size: 16px;
 
-  margin-top: 13px;
+  margin-top: 10px;
 
   letter-spacing: -.03em;
 
@@ -1195,15 +1218,13 @@ body {
 
 .sprint-box > p {
 
-  font-size: 11px;
+  font-size: 10px;
 
   line-height: 1.4;
 
   color: var(--muted);
 
-  margin-top: 9px;
-
-  max-width: 320px;
+  margin-top: 8px;
 
 }
 
@@ -1216,51 +1237,61 @@ body {
 
   gap: 7px;
 
-  margin-top: 20px;
+  margin-top: 14px;
 
 }
 
 
 .sprint-work-item {
 
-  padding: 9px 11px;
+  padding: 8px 9px;
 
   border-radius: 8px;
 
   background:
     rgba(36,35,31,.055);
 
-  font-size: 10px;
+  font-size: 9px;
 
-  line-height: 1.25;
-
-  color: var(--ink);
+  line-height: 1.3;
 
 }
 
 
-.checkpoint-center {
+.checkpoint-box {
 
-  display: flex;
+  grid-column: 1 / -1;
 
-  flex-direction: column;
+  padding: 14px 16px;
+
+  border-radius: 13px;
+
+  background: var(--ink);
+
+  color: var(--paper);
+
+  display: grid;
+
+  grid-template-columns: auto 1fr;
 
   align-items: center;
 
-  justify-content: center;
-
-  position: relative;
+  gap: 15px;
 
 }
 
 
 .checkpoint-circle {
 
-  width: 105px;
+  width: 67px;
 
-  height: 105px;
+  height: 67px;
 
   border-radius: 50%;
+
+  background: var(--paper);
+
+  color: var(--ink);
 
   display: flex;
 
@@ -1270,110 +1301,154 @@ body {
 
   text-align: center;
 
-  background: var(--ink);
+  font-size: 8px;
 
-  color: var(--paper);
+  line-height: 1.15;
+
+  font-weight: 800;
+
+}
+
+
+.checkpoint-copy strong {
+
+  display: block;
 
   font-size: 11px;
 
-  line-height: 1.2;
+  margin-bottom: 4px;
+
+}
+
+
+.checkpoint-copy span {
+
+  font-size: 9px;
+
+  line-height: 1.35;
+
+  color: rgba(244,240,232,.7);
+
+}
+
+
+/* ---------------------------------------------------------
+   RISCOS
+--------------------------------------------------------- */
+
+.risk-column {
+
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+.risk-intro {
+
+  font-size: 11px;
+
+  line-height: 1.4;
+
+  color: var(--muted);
+
+  margin-bottom: 12px;
+
+}
+
+
+.risk-flow {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+}
+
+
+.risk-row {
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(150px, .85fr)
+    65px
+    minmax(190px, 1.15fr);
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 9px 10px;
+
+  border-radius: 10px;
+
+  background:
+    rgba(255,255,255,.42);
+
+  border: 1px solid var(--line);
+
+}
+
+
+.risk {
+
+  font-size: 9px;
+
+  line-height: 1.3;
 
   font-weight: 700;
 
 }
 
 
-.checkpoint-arrow {
+.impact {
 
-  font-size: 30px;
+  display: flex;
 
-  color: var(--terracotta-dark);
+  align-items: center;
 
-  margin-top: 6px;
+  gap: 5px;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: .06em;
 
 }
 
 
-.checkpoint-label {
+.impact-dot {
 
-  text-align: center;
+  width: 7px;
+
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--terracotta);
+
+}
+
+
+.impact.medium .impact-dot {
+
+  background: var(--sand);
+
+}
+
+
+.mitigation {
 
   font-size: 9px;
-
-  line-height: 1.25;
-
-  color: var(--muted);
-
-  margin-top: 4px;
-
-}
-
-
-.scenario-area {
-
-  grid-column: 1 / -1;
-
-  display: grid;
-
-  grid-template-columns:
-    repeat(3, 1fr);
-
-  gap: 12px;
-
-}
-
-
-.scenario {
-
-  border-radius: 12px;
-
-  padding: 13px 15px;
-
-  min-width: 0;
-
-  overflow: hidden;
-
-}
-
-
-.scenario.a {
-
-  background:
-    rgba(168,183,162,.38);
-
-}
-
-
-.scenario.b {
-
-  background:
-    rgba(182,161,173,.38);
-
-}
-
-
-.scenario.c {
-
-  background:
-    rgba(197,138,114,.35);
-
-}
-
-
-.scenario strong {
-
-  display: block;
-
-  font-size: 10px;
-
-  margin-bottom: 5px;
-
-}
-
-
-.scenario p {
-
-  font-size: 10px;
 
   line-height: 1.3;
 
@@ -1382,51 +1457,65 @@ body {
 }
 
 
-/* =========================================================
-   SLIDE 05 — CONCLUSÃO
-========================================================= */
+.arrow-small {
 
-.conclusion-shape {
+  color: var(--terracotta-dark);
 
-  position: absolute;
+  font-weight: 800;
 
-  width: 460px;
-  height: 460px;
-
-  right: -180px;
-  bottom: -190px;
-
-  border-radius: 50%;
-
-  background: var(--mauve);
-
-  opacity: .35;
+  padding: 0 2px;
 
 }
 
 
-.final-content {
+.risk-principle {
+
+  margin-top: auto;
+
+  padding: 12px 14px;
+
+  border-radius: 11px;
+
+  background:
+    rgba(197,138,114,.16);
+
+  font-size: 9px;
+
+  line-height: 1.35;
+
+  color: var(--terracotta-dark);
+
+  font-weight: 700;
+
+}
+
+
+/* =========================================================
+   SLIDE 05 — MÉTRICAS
+========================================================= */
+
+.metrics-slide-content {
 
   position: relative;
 
   z-index: 5;
 
-  height: calc(100% - 174px);
+  height: calc(100% - 170px);
 
   min-height: 430px;
 
   display: grid;
 
   grid-template-columns:
-    minmax(300px, .9fr)
-    minmax(500px, 1.3fr);
+    minmax(300px, .82fr)
+    minmax(500px, 1.18fr);
 
-  gap: 42px;
+  gap: 44px;
 
 }
 
 
-.final-statement {
+.metrics-statement {
 
   display: flex;
 
@@ -1434,15 +1523,13 @@ body {
 
   justify-content: center;
 
-  padding-bottom: 15px;
-
 }
 
 
-.final-statement-main {
+.metrics-statement-main {
 
   font-size:
-    clamp(30px, 3vw, 46px);
+    clamp(32px, 3.2vw, 49px);
 
   line-height: 1.02;
 
@@ -1450,18 +1537,18 @@ body {
 
   font-weight: 750;
 
-  max-width: 460px;
+  max-width: 450px;
 
 }
 
 
-.final-statement-sub {
+.metrics-statement-sub {
 
-  margin-top: 25px;
+  margin-top: 23px;
 
-  max-width: 430px;
+  max-width: 420px;
 
-  font-size: 14px;
+  font-size: 13px;
 
   line-height: 1.5;
 
@@ -1470,7 +1557,7 @@ body {
 }
 
 
-.final-statement-sub strong {
+.metrics-statement-sub strong {
 
   color: var(--ink);
 
@@ -1573,6 +1660,29 @@ body {
 
 
 /* =========================================================
+   FORMAS DECORATIVAS
+========================================================= */
+
+.conclusion-shape {
+
+  position: absolute;
+
+  width: 460px;
+  height: 460px;
+
+  right: -180px;
+  bottom: -190px;
+
+  border-radius: 50%;
+
+  background: var(--mauve);
+
+  opacity: .35;
+
+}
+
+
+/* =========================================================
    RESPONSIVIDADE TABLET
 ========================================================= */
 
@@ -1605,16 +1715,6 @@ body {
   }
 
 
-  .context-layout {
-
-    grid-template-columns:
-      1fr 1.6fr;
-
-    gap: 25px;
-
-  }
-
-
   .prioritization-content {
 
     grid-template-columns:
@@ -1625,9 +1725,32 @@ body {
   }
 
 
-  .execution-content {
+  .decision-communication {
 
-    column-gap: 15px;
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 25px;
+
+  }
+
+
+  .execution-risk {
+
+    grid-template-columns:
+      1fr 1.15fr;
+
+    gap: 22px;
+
+  }
+
+
+  .metrics-slide-content {
+
+    grid-template-columns:
+      .8fr 1.2fr;
+
+    gap: 25px;
 
   }
 
@@ -1661,26 +1784,33 @@ body {
   }
 
 
-  .context-layout,
   .prioritization-content,
-  .execution-content,
-  .final-content {
+  .decision-communication,
+  .execution-risk,
+  .metrics-slide-content {
 
     min-height: 390px;
 
   }
 
 
-  .context-card {
+  .priority-rule {
 
-    padding: 14px 16px;
+    padding: 8px 10px;
 
   }
 
 
-  .scenario {
+  .decision-item {
 
-    padding: 10px 12px;
+    padding: 8px 10px;
+
+  }
+
+
+  .risk-row {
+
+    padding: 7px 9px;
 
   }
 
@@ -1692,7 +1822,6 @@ body {
 ========================================================= */
 
 @media (max-width: 767px) {
-
 
   html,
   body {
@@ -1712,8 +1841,7 @@ body {
 
   body {
 
-    background:
-      var(--paper);
+    background: var(--paper);
 
   }
 
@@ -1726,8 +1854,7 @@ body {
 
     display: block;
 
-    background:
-      var(--paper);
+    background: var(--paper);
 
   }
 
@@ -1762,9 +1889,9 @@ body {
   }
 
 
-  /* =======================================================
-     CANVAS MOBILE
-  ======================================================= */
+  /* -------------------------------------------------------
+     CANVAS
+  ------------------------------------------------------- */
 
   .canvas {
 
@@ -1785,7 +1912,7 @@ body {
     padding:
       max(34px, env(safe-area-inset-top))
       22px
-      125px
+      118px
       22px;
 
   }
@@ -1797,14 +1924,14 @@ body {
 
     right: 22px;
 
-    bottom: 105px;
+    bottom: 91px;
 
   }
 
 
-  /* =======================================================
+  /* -------------------------------------------------------
      TIPOGRAFIA
-  ======================================================= */
+  ------------------------------------------------------- */
 
   .eyebrow {
 
@@ -1815,8 +1942,6 @@ body {
     letter-spacing: .12em;
 
     margin-bottom: 15px;
-
-    max-width: 100%;
 
   }
 
@@ -1832,14 +1957,14 @@ body {
 
     letter-spacing: -.045em;
 
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 
   }
 
 
-  /* =======================================================
+  /* -------------------------------------------------------
      FOOTER
-  ======================================================= */
+  ------------------------------------------------------- */
 
   .footer {
 
@@ -1849,7 +1974,7 @@ body {
 
     right: 22px;
 
-    bottom: 29px;
+    bottom: 27px;
 
     height: auto;
 
@@ -1878,9 +2003,9 @@ body {
   }
 
 
-  /* =======================================================
+  /* -------------------------------------------------------
      NAVEGAÇÃO MOBILE
-  ======================================================= */
+  ------------------------------------------------------- */
 
   .mobile-navigation {
 
@@ -1890,17 +2015,15 @@ body {
 
     right: 22px;
 
-    bottom: 65px;
+    bottom: 57px;
 
-    z-index: 50;
+    z-index: 30;
 
     display: flex;
 
     align-items: center;
 
     justify-content: space-between;
-
-    gap: 10px;
 
     pointer-events: none;
 
@@ -1909,26 +2032,23 @@ body {
 
   .mobile-navigation button {
 
-    appearance: none;
+    pointer-events: auto;
 
-    -webkit-appearance: none;
+    border: 0;
 
-    border: 1px solid rgba(36,35,31,.14);
-
-    background:
-      rgba(244,240,232,.94);
+    background: rgba(36,35,31,.08);
 
     color: var(--ink);
 
-    min-width: 102px;
+    min-width: 104px;
 
-    height: 38px;
+    height: 36px;
 
     padding: 0 13px;
 
     border-radius: 999px;
 
-    display: inline-flex;
+    display: flex;
 
     align-items: center;
 
@@ -1940,35 +2060,27 @@ body {
 
     font-size: 9px;
 
-    line-height: 1;
-
     font-weight: 800;
 
-    letter-spacing: .04em;
-
-    box-shadow:
-      0 5px 18px rgba(36,35,31,.08);
-
-    pointer-events: auto;
+    letter-spacing: .03em;
 
     cursor: pointer;
 
-    transition:
-      transform .18s ease,
-      opacity .18s ease,
-      background .18s ease;
+    -webkit-tap-highlight-color: transparent;
 
   }
 
 
-  .mobile-navigation button:active {
+  .mobile-navigation button.next {
 
-    transform: scale(.96);
+    background: var(--ink);
+
+    color: var(--paper);
 
   }
 
 
-  .mobile-navigation button.disabled {
+  .mobile-navigation button:disabled {
 
     opacity: .28;
 
@@ -1979,53 +2091,35 @@ body {
 
   .mobile-navigation .nav-arrow {
 
-    font-size: 15px;
+    font-size: 14px;
 
     line-height: 1;
-
-    font-weight: 500;
 
   }
 
 
-  .mobile-navigation .nav-center {
+  .mobile-navigation .nav-counter {
 
-    flex: 1;
+    position: absolute;
 
-    min-width: 42px;
+    left: 50%;
 
-    text-align: center;
+    transform: translateX(-50%);
 
-    font-size: 9px;
-
-    font-weight: 800;
-
-    letter-spacing: .08em;
+    font-size: 8px;
 
     color: var(--muted);
+
+    font-weight: 800;
 
     white-space: nowrap;
 
   }
 
 
-  .mobile-navigation .next-button {
-
-    background:
-      var(--ink);
-
-    color:
-      var(--paper);
-
-    border-color:
-      var(--ink);
-
-  }
-
-
-  /* =======================================================
-     CAPA MOBILE
-  ======================================================= */
+  /* -------------------------------------------------------
+     CAPA
+  ------------------------------------------------------- */
 
   .cover {
 
@@ -2108,7 +2202,7 @@ body {
 
     left: 22px;
 
-    bottom: 135px;
+    bottom: 108px;
 
     font-size: 14px;
 
@@ -2117,199 +2211,9 @@ body {
   }
 
 
-  /* =======================================================
-     CONTEXTO
-  ======================================================= */
-
-  .context {
-
-    min-height: auto;
-
-  }
-
-
-  .context .canvas {
-
-    padding-bottom: 140px;
-
-  }
-
-
-  .context-shape {
-
-    width: 300px;
-
-    height: 300px;
-
-    right: -145px;
-
-    top: -110px;
-
-    opacity: .35;
-
-  }
-
-
-  .context-title {
-
-    max-width: 100%;
-
-    font-size:
-      clamp(32px, 9vw, 43px);
-
-    margin-bottom: 34px;
-
-  }
-
-
-  .context-layout {
-
-    width: 100%;
-
-    height: auto;
-
-    min-height: 0;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 30px;
-
-  }
-
-
-  .context-left {
-
-    width: 100%;
-
-    padding-top: 0;
-
-  }
-
-
-  .context-big {
-
-    font-size:
-      clamp(70px, 22vw, 100px);
-
-  }
-
-
-  .context-big-label {
-
-    font-size: 14px;
-
-    margin-top: 9px;
-
-  }
-
-
-  .context-description {
-
-    max-width: 100%;
-
-    margin-top: 22px;
-
-    font-size: 14px;
-
-    line-height: 1.5;
-
-  }
-
-
-  .context-left > div:last-child {
-
-    margin-top: 21px !important;
-
-  }
-
-
-  .context-right {
-
-    width: 100%;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 14px;
-
-  }
-
-
-  .context-card {
-
-    width: 100%;
-
-    padding: 18px;
-
-    overflow: visible;
-
-  }
-
-
-  .context-card ul {
-
-    gap: 13px;
-
-  }
-
-
-  .context-card li {
-
-    font-size: 11px;
-
-    line-height: 1.38;
-
-  }
-
-
-  .context-card li strong {
-
-    font-size: 11px;
-
-  }
-
-
-  .context-principle {
-
-    width: 100%;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 9px;
-
-    padding: 16px;
-
-  }
-
-
-  .context-principle strong {
-
-    white-space: normal;
-
-    font-size: 13px;
-
-  }
-
-
-  .context-principle span {
-
-    font-size: 11px;
-
-    line-height: 1.42;
-
-  }
-
-
-  /* =======================================================
-     PRIORIZAÇÃO
-  ======================================================= */
+  /* -------------------------------------------------------
+     SLIDE 02 — PRIORIZAÇÃO
+  ------------------------------------------------------- */
 
   .prioritization-content {
 
@@ -2433,27 +2337,91 @@ body {
   }
 
 
-  .decision-area {
+  .priority-panel {
 
     width: 100%;
 
   }
 
 
-  .decision-intro {
+  .priority-intro {
 
     max-width: 100%;
 
     font-size: 12px;
 
-    line-height: 1.45;
+  }
+
+
+  .priority-rules {
+
+    gap: 10px;
+
+  }
+
+
+  .priority-rule {
+
+    padding: 12px;
+
+  }
+
+
+  .priority-rule strong {
+
+    font-size: 12px;
+
+  }
+
+
+  .priority-rule span {
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+  }
+
+
+  .priority-summary {
+
+    margin-top: 18px;
+
+  }
+
+
+  /* -------------------------------------------------------
+     SLIDE 03 — DECISÃO + COMUNICAÇÃO
+  ------------------------------------------------------- */
+
+  .decision-communication {
+
+    width: 100%;
+
+    height: auto;
+
+    min-height: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 38px;
+
+  }
+
+
+  .decision-column,
+  .communication-column {
+
+    width: 100%;
 
   }
 
 
   .decision-list {
 
-    gap: 11px;
+    gap: 10px;
 
   }
 
@@ -2463,11 +2431,18 @@ body {
     width: 100%;
 
     grid-template-columns:
-      25px auto 1fr;
+      25px 76px 1fr;
 
     gap: 7px;
 
-    padding: 13px;
+    padding: 12px;
+
+  }
+
+
+  .decision-item h3 {
+
+    font-size: 12px;
 
   }
 
@@ -2488,18 +2463,64 @@ body {
   }
 
 
-  .decision-bottom-tags {
+  .communication-intro {
 
-    gap: 2px;
+    font-size: 12px;
 
   }
 
 
-  /* =======================================================
-     EXECUÇÃO
-  ======================================================= */
+  .stakeholders {
 
-  .execution-content {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 9px;
+
+  }
+
+
+  .stakeholder {
+
+    padding: 12px;
+
+  }
+
+
+  .stakeholder h3 {
+
+    font-size: 10px;
+
+  }
+
+
+  .stakeholder p {
+
+    font-size: 9px;
+
+  }
+
+
+  .communication-quote {
+
+    padding: 15px;
+
+  }
+
+
+  .communication-quote blockquote {
+
+    font-size: 11px;
+
+    line-height: 1.48;
+
+  }
+
+
+  /* -------------------------------------------------------
+     SLIDE 04 — EXECUÇÃO + RISCOS
+  ------------------------------------------------------- */
+
+  .execution-risk {
 
     width: 100%;
 
@@ -2511,7 +2532,20 @@ body {
 
     flex-direction: column;
 
-    gap: 22px;
+    gap: 36px;
+
+  }
+
+
+  .execution-column {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
 
   }
 
@@ -2520,20 +2554,14 @@ body {
 
     width: 100%;
 
-    min-width: 0;
-
-    padding: 20px;
-
-    overflow: visible;
+    padding: 18px;
 
   }
 
 
   .sprint-box h3 {
 
-    font-size: 18px;
-
-    margin-top: 12px;
+    font-size: 17px;
 
   }
 
@@ -2542,11 +2570,9 @@ body {
 
     max-width: 100%;
 
-    font-size: 11px;
+    font-size: 10px;
 
-    line-height: 1.48;
-
-    margin-top: 10px;
+    line-height: 1.45;
 
   }
 
@@ -2555,100 +2581,85 @@ body {
 
     gap: 8px;
 
-    margin-top: 18px;
-
   }
 
 
   .sprint-work-item {
 
-    padding: 10px 11px;
-
     font-size: 10px;
 
-    line-height: 1.35;
+    padding: 9px 10px;
 
   }
 
 
-  .checkpoint-center {
+  .checkpoint-box {
 
     width: 100%;
 
-    min-height: 150px;
-
-    flex-direction: column;
-
-    justify-content: center;
+    grid-template-columns: auto 1fr;
 
   }
 
 
-  .checkpoint-circle {
-
-    width: 90px;
-
-    height: 90px;
-
-    font-size: 10px;
-
-  }
-
-
-  .checkpoint-arrow {
-
-    transform: rotate(90deg);
-
-    font-size: 25px;
-
-    margin-top: 7px;
-
-  }
-
-
-  .checkpoint-label {
-
-    font-size: 9px;
-
-    line-height: 1.35;
-
-    margin-top: 5px;
-
-  }
-
-
-  .scenario-area {
+  .risk-column {
 
     width: 100%;
 
-    display: flex;
+  }
 
-    flex-direction: column;
 
-    gap: 11px;
+  .risk-intro {
+
+    font-size: 11px;
 
   }
 
 
-  .scenario {
+  .risk-flow {
 
-    width: 100%;
-
-    padding: 14px 15px;
-
-    overflow: visible;
+    gap: 9px;
 
   }
 
 
-  .scenario strong {
+  .risk-row {
+
+    display: grid;
+
+    grid-template-columns:
+      1fr auto;
+
+    gap: 7px;
+
+    padding: 12px;
+
+  }
+
+
+  .risk {
 
     font-size: 10px;
 
   }
 
 
-  .scenario p {
+  .impact {
+
+    grid-column: 2;
+
+    grid-row: 1;
+
+  }
+
+
+  .mitigation {
+
+    grid-column: 1 / -1;
+
+    padding-top: 7px;
+
+    border-top: 1px solid var(--line);
 
     font-size: 10px;
 
@@ -2657,11 +2668,18 @@ body {
   }
 
 
-  /* =======================================================
-     CONCLUSÃO
-  ======================================================= */
+  .risk-principle {
 
-  .final-content {
+    margin-top: 17px;
+
+  }
+
+
+  /* -------------------------------------------------------
+     SLIDE 05 — MÉTRICAS
+  ------------------------------------------------------- */
+
+  .metrics-slide-content {
 
     width: 100%;
 
@@ -2673,38 +2691,21 @@ body {
 
     flex-direction: column;
 
-    gap: 34px;
+    gap: 36px;
 
   }
 
 
-  .conclusion-shape {
-
-    width: 300px;
-
-    height: 300px;
-
-    right: -155px;
-
-    bottom: -90px;
-
-    opacity: .3;
-
-  }
-
-
-  .final-statement {
+  .metrics-statement {
 
     width: 100%;
-
-    padding-bottom: 0;
 
     justify-content: flex-start;
 
   }
 
 
-  .final-statement-main {
+  .metrics-statement-main {
 
     max-width: 100%;
 
@@ -2716,7 +2717,7 @@ body {
   }
 
 
-  .final-statement-sub {
+  .metrics-statement-sub {
 
     max-width: 100%;
 
@@ -2793,9 +2794,9 @@ body {
   }
 
 
-  /* =======================================================
+  /* -------------------------------------------------------
      TRANSIÇÃO
-  ======================================================= */
+  ------------------------------------------------------- */
 
   .slide {
 
@@ -2870,11 +2871,7 @@ body {
 
   .mobile-navigation button {
 
-    min-width: 88px;
-
-    padding: 0 10px;
-
-    font-size: 8px;
+    min-width: 94px;
 
   }
 
@@ -2898,25 +2895,14 @@ body {
   .decision-item {
 
     grid-template-columns:
-      23px 1fr;
+      23px 70px 1fr;
 
   }
 
 
-  .decision-item > div:last-child {
+  .stakeholders {
 
-    grid-column: 2;
-
-  }
-
-
-  .decision-item > .tag {
-
-    grid-column: 2;
-
-    grid-row: 2;
-
-    width: max-content;
+    grid-template-columns: 1fr;
 
   }
 
@@ -2987,6 +2973,7 @@ body {
 
 <!-- =====================================================
      SLIDE 01 — CAPA
+     MANTIDA
 ===================================================== -->
 
 <section class="slide active cover">
@@ -3039,204 +3026,7 @@ body {
 
 
 <!-- =====================================================
-     SLIDE 02 — CONTEXTO
-===================================================== -->
-
-<section class="slide context">
-
-  <div class="canvas">
-
-    <div class="context-shape"></div>
-
-    <div class="eyebrow">
-      Contexto · O problema por trás dos pedidos
-    </div>
-
-    <h1 class="title context-title">
-
-      Alta demanda, capacidade quase
-      <span class="accent">zero</span>
-      para atendê-la.
-
-    </h1>
-
-
-    <div class="context-layout">
-
-
-      <div class="context-left">
-
-        <div class="context-big">
-          2,5M
-        </div>
-
-        <div class="context-big-label">
-          visitas / mês
-        </div>
-
-        <div class="context-description">
-
-          O desafio não é encontrar trabalho.
-          É decidir onde a capacidade limitada
-          gera mais impacto, considerando
-          evidência, urgência, risco e prazo.
-
-        </div>
-
-        <div>
-
-          <span class="tag gray">
-            4 editorias
-          </span>
-
-          <span class="tag gray">
-            2 sprints
-          </span>
-
-          <span class="tag gray">
-            1 dev parcial
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <div class="context-right">
-
-
-        <div class="context-card problem">
-
-          <div class="context-card-head">
-
-            <h3>
-              Problemas
-            </h3>
-
-            <span class="tag sage">
-              Evidência
-            </span>
-
-          </div>
-
-          <ul>
-
-            <li>
-              <strong>Performance</strong><br>
-
-              <span>
-                LCP acima de 4s em 40% das páginas.
-              </span>
-            </li>
-
-            <li>
-              <strong>Premium</strong><br>
-
-              <span>
-                Conversão em 0,6% vs. meta de 1,2%.
-              </span>
-            </li>
-
-            <li>
-              <strong>SEO Saúde</strong><br>
-
-              <span>
-                Queda para 18% do tráfego orgânico.
-              </span>
-            </li>
-
-            <li>
-              <strong>Backlog</strong><br>
-
-              <span>
-                11 itens represados sem relevância revalidada.
-              </span>
-            </li>
-
-          </ul>
-
-        </div>
-
-
-        <div class="context-card request">
-
-          <div class="context-card-head">
-
-            <h3>
-              Pedidos
-            </h3>
-
-            <span class="tag terracotta">
-              Validar
-            </span>
-
-          </div>
-
-          <ul>
-
-            <li>
-              <strong>Comercial</strong><br>
-
-              <span>
-                Deadline sazonal + anunciante representa
-                15% da receita de ads.
-              </span>
-            </li>
-
-            <li>
-              <strong>Tags + recomendação</strong><br>
-
-              <span>
-                Solução já proposta, mas hipótese
-                de engajamento ainda não validada.
-              </span>
-            </li>
-
-          </ul>
-
-        </div>
-
-
-        <div class="context-principle">
-
-          <strong>
-            Priorizar problemas, não pedidos.
-          </strong>
-
-          <span>
-            O pedido é uma entrada.
-            O problema mensurado é o que permite
-            decidir se aquela demanda merece capacidade agora.
-          </span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <div class="footer">
-
-      <span>
-        Case — Product Owner · Buildbox
-      </span>
-
-      <span>
-        02 / 05
-      </span>
-
-    </div>
-
-    <div class="mobile-navigation"></div>
-
-  </div>
-
-</section>
-
-
-<!-- =====================================================
-     SLIDE 03 — PRIORIZAÇÃO
+     SLIDE 02 — PRIORIZAÇÃO
 ===================================================== -->
 
 <section class="slide">
@@ -3244,19 +3034,21 @@ body {
   <div class="canvas">
 
     <div class="eyebrow">
-      Priorização · Decisão
+      Priorização · Contexto → Evidência → Capacidade
     </div>
 
     <h1 class="title">
 
-      Impacto importa — mas precisa caber na
-      <span class="accent">capacidade.</span>
+      Alta demanda, capacidade limitada:
+      <span class="accent">onde colocar o foco?</span>
 
     </h1>
 
 
     <div class="prioritization-content">
 
+
+      <!-- MATRIZ -->
 
       <div class="matrix-area">
 
@@ -3379,24 +3171,25 @@ body {
 
           <div class="matrix-note-text">
 
-            Hipótese de priorização com os dados disponíveis.
-            Esforço, dependências e causa raiz ainda precisam
-            ser validados durante o primeiro ciclo.
+            A matriz não é uma verdade absoluta:
+            é uma hipótese de priorização construída
+            com impacto, urgência, esforço e evidência.
+            O primeiro ciclo serve para reduzir as incertezas.
 
           </div>
 
           <div>
 
             <span class="tag sage">
-              Delivery
+              Alto impacto
             </span>
 
             <span class="tag mauve">
-              Experimento
+              Validar
             </span>
 
-            <span class="tag terracotta">
-              MVP
+            <span class="tag gray">
+              Aguardar
             </span>
 
           </div>
@@ -3406,14 +3199,181 @@ body {
       </div>
 
 
-      <div class="decision-area">
+      <!-- CRITÉRIOS -->
 
-        <div class="decision-intro">
+      <div class="priority-panel">
 
-          Com capacidade restrita, a ordem considera
-          impacto, urgência, risco, esforço e confiança
-          na evidência.
+        <div class="priority-intro">
 
+          Com apenas parte da capacidade de desenvolvimento
+          disponível, a pergunta não é “o que chegou primeiro?”.
+          É “qual problema merece capacidade agora?”.
+
+        </div>
+
+
+        <div class="priority-rules">
+
+
+          <div class="priority-rule">
+
+            <div class="priority-rule-number">
+              01
+            </div>
+
+            <div>
+
+              <strong>
+                Impacto
+              </strong>
+
+              <span>
+                Tamanho do problema e potencial de resultado
+                para usuário ou negócio.
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="priority-rule">
+
+            <div class="priority-rule-number">
+              02
+            </div>
+
+            <div>
+
+              <strong>
+                Urgência
+              </strong>
+
+              <span>
+                Deadline, risco de receita ou deterioração
+                relevante do cenário atual.
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="priority-rule">
+
+            <div class="priority-rule-number">
+              03
+            </div>
+
+            <div>
+
+              <strong>
+                Esforço
+              </strong>
+
+              <span>
+                Capacidade necessária, dependências
+                e complexidade técnica.
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="priority-rule">
+
+            <div class="priority-rule-number">
+              04
+            </div>
+
+            <div>
+
+              <strong>
+                Confiança
+              </strong>
+
+              <span>
+                Quanto da decisão está sustentado por evidência
+                versus hipótese ainda não validada.
+              </span>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="priority-summary">
+
+          <strong>
+            Decisão inicial
+          </strong>
+
+          <span>
+            Performance entra primeiro. Premium entra como
+            experimento. Comercial depende do sizing.
+            SEO, Tags e backlog seguem em discovery/revalidação.
+
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer">
+
+      <span>
+        Priorizar problemas, não pedidos
+      </span>
+
+      <span>
+        02 / 05
+      </span>
+
+    </div>
+
+    <div class="mobile-navigation"></div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     SLIDE 03 — DECISÃO + COMUNICAÇÃO
+===================================================== -->
+
+<section class="slide">
+
+  <div class="canvas">
+
+    <div class="eyebrow">
+      Decisão · Alinhamento · Comunicação
+    </div>
+
+    <h1 class="title">
+
+      Uma decisão explícita,
+      <span class="accent">quatro leituras diferentes.</span>
+
+    </h1>
+
+
+    <div class="decision-communication">
+
+
+      <!-- DECISÃO -->
+
+      <div class="decision-column">
+
+        <div class="section-kicker">
+          Ordem de execução
         </div>
 
 
@@ -3463,8 +3423,8 @@ body {
               </h3>
 
               <p>
-                Validar a hipótese do paywall
-                antes de qualquer rollout.
+                Validar a hipótese do paywall antes
+                de qualquer rollout.
               </p>
 
             </div>
@@ -3489,13 +3449,14 @@ body {
               </h3>
 
               <p>
-                Dimensionar a oportunidade e atender
-                se retorno × esforço justificar.
+                Dimensionar oportunidade, retorno,
+                prazo e esforço antes de comprometer capacidade.
               </p>
 
             </div>
 
           </div>
+
 
         </div>
 
@@ -3503,22 +3464,124 @@ body {
         <div class="decision-bottom">
 
           <div class="decision-bottom-label">
-            Fora do delivery imediato
+            Não entra no delivery imediato
           </div>
 
           <div class="decision-bottom-tags">
 
             <span class="tag gray">
-              SEO Saúde · discovery conectado à performance
+              SEO Saúde
             </span>
 
             <span class="tag gray">
-              Tags · hipótese não validada
+              Tags
             </span>
 
             <span class="tag gray">
-              Backlog · revalidação
+              Backlog
             </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- COMUNICAÇÃO -->
+
+      <div class="communication-column">
+
+        <div class="section-kicker">
+          Como eu comunicaria
+        </div>
+
+        <div class="communication-intro">
+
+          A decisão não muda conforme o stakeholder.
+          O que muda é o nível de detalhe e o tipo
+          de consequência que importa para cada um.
+
+        </div>
+
+
+        <div class="stakeholders">
+
+
+          <div class="stakeholder">
+
+            <h3>
+              Head de Produto
+            </h3>
+
+            <p>
+              impacto + trade-offs
+            </p>
+
+          </div>
+
+
+          <div class="stakeholder">
+
+            <h3>
+              Comercial
+            </h3>
+
+            <p>
+              receita + prazo + alternativas
+            </p>
+
+          </div>
+
+
+          <div class="stakeholder">
+
+            <h3>
+              Editorial
+            </h3>
+
+            <p>
+              problema + hipótese + próximo ciclo
+            </p>
+
+          </div>
+
+
+          <div class="stakeholder">
+
+            <h3>
+              SEO
+            </h3>
+
+            <p>
+              diagnóstico + dependências
+            </p>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="communication-quote">
+
+          <span class="tag mauve">
+            Exemplo de comunicação
+          </span>
+
+          <blockquote>
+
+            “A oportunidade continua no backlog.
+            Neste ciclo, precisamos primeiro validar
+            o tamanho do problema e o impacto esperado
+            da solução, para garantir que estamos usando
+            a capacidade limitada na maior oportunidade.”
+
+          </blockquote>
+
+          <div class="communication-note">
+
+            Fora do sprint não é fora do roadmap.
 
           </div>
 
@@ -3532,7 +3595,7 @@ body {
     <div class="footer">
 
       <span>
-        Decisão explícita + ordem de execução
+        Comunicação adapta a leitura, não a decisão
       </span>
 
       <span>
@@ -3549,7 +3612,7 @@ body {
 
 
 <!-- =====================================================
-     SLIDE 04 — EXECUÇÃO
+     SLIDE 04 — EXECUÇÃO + GESTÃO DE RISCOS
 ===================================================== -->
 
 <section class="slide">
@@ -3557,54 +3620,117 @@ body {
   <div class="canvas">
 
     <div class="eyebrow">
-      Execução · Sprint 1 → Checkpoint → Sprint 2
+      Execução · Sprint 1 → Checkpoint → Sprint 2 · Riscos
     </div>
 
     <h1 class="title">
 
-      A Sprint 2 só escala aquilo que a
-      <span class="accent">Sprint 1 comprovar.</span>
+      Executar sem perder a capacidade de
+      <span class="accent">mudar de direção.</span>
 
     </h1>
 
 
-    <div class="execution-content">
+    <div class="execution-risk">
 
 
-      <div class="sprint-box">
+      <!-- EXECUÇÃO -->
 
-        <span class="tag sage">
-          Sprint 1
-        </span>
+      <div class="execution-column">
 
-        <h3>
-          Aprender + corrigir
-        </h3>
 
-        <p>
+        <div class="sprint-box sprint-one">
 
-          Usar o primeiro ciclo para reduzir incerteza,
-          atacar o problema mais crítico e preparar
-          a decisão seguinte.
+          <span class="tag sage">
+            Sprint 1
+          </span>
 
-        </p>
+          <h3>
+            Aprender + corrigir
+          </h3>
 
-        <div class="sprint-work">
+          <p>
+            Primeiro ciclo focado em reduzir incerteza,
+            atacar o problema crítico e preparar a próxima decisão.
+          </p>
 
-          <div class="sprint-work-item">
-            Performance: diagnóstico + MVP
+
+          <div class="sprint-work">
+
+            <div class="sprint-work-item">
+              Performance: diagnóstico + MVP
+            </div>
+
+            <div class="sprint-work-item">
+              Premium: instrumentação + experimento
+            </div>
+
+            <div class="sprint-work-item">
+              Comercial: deadline + sizing
+            </div>
+
+            <div class="sprint-work-item">
+              SEO + backlog: discovery
+            </div>
+
           </div>
 
-          <div class="sprint-work-item">
-            Premium: instrumentação + experimento
+        </div>
+
+
+        <div class="sprint-box sprint-two">
+
+          <span class="tag mauve">
+            Sprint 2
+          </span>
+
+          <h3>
+            Escalar o que funcionou
+          </h3>
+
+          <p>
+            O segundo ciclo permanece condicional
+            às evidências observadas no primeiro.
+          </p>
+
+
+          <div class="sprint-work">
+
+            <div class="sprint-work-item">
+              Escalar correções de performance
+            </div>
+
+            <div class="sprint-work-item">
+              Rollout do Premium se validado
+            </div>
+
+            <div class="sprint-work-item">
+              MVP Comercial se justificável
+            </div>
+
           </div>
 
-          <div class="sprint-work-item">
-            Comercial: deadline + sizing
+        </div>
+
+
+        <div class="checkpoint-box">
+
+          <div class="checkpoint-circle">
+            CHECKPOINT
           </div>
 
-          <div class="sprint-work-item">
-            SEO + backlog: discovery
+          <div class="checkpoint-copy">
+
+            <strong>
+              Evidência → próxima decisão
+            </strong>
+
+            <span>
+              O objetivo não é cumprir o plano original
+              a qualquer custo. É usar o primeiro ciclo
+              para decidir onde o segundo ciclo gera mais valor.
+            </span>
+
           </div>
 
         </div>
@@ -3612,110 +3738,150 @@ body {
       </div>
 
 
-      <div class="checkpoint-center">
+      <!-- RISCOS -->
 
-        <div class="checkpoint-circle">
+      <div class="risk-column">
 
-          Checkpoint<br>
-          de decisão
+        <div class="section-kicker">
+          Gestão de riscos
+        </div>
+
+        <div class="risk-intro">
+
+          Risco não é argumento para paralisar.
+          É uma variável que precisa ter impacto,
+          resposta e gatilho de decisão.
 
         </div>
 
-        <div class="checkpoint-arrow">
-          →
-        </div>
 
-        <div class="checkpoint-label">
-
-          Evidência<br>
-          → próximo compromisso
-
-        </div>
-
-      </div>
+        <div class="risk-flow">
 
 
-      <div class="sprint-box">
+          <div class="risk-row">
 
-        <span class="tag mauve">
-          Sprint 2
-        </span>
+            <div class="risk">
+              LCP exigir esforço maior
+              que o previsto
+            </div>
 
-        <h3>
-          Escalar o que funcionou
-        </h3>
+            <div class="impact high">
 
-        <p>
+              <span class="impact-dot"></span>
+              Alto
 
-          A capacidade do segundo ciclo permanece
-          condicional aos resultados observados
-          no primeiro.
+            </div>
 
-        </p>
+            <div class="mitigation">
 
-        <div class="sprint-work">
+              Spike técnico
+              <span class="arrow-small">→</span>
+              MVP
+              <span class="arrow-small">→</span>
+              checkpoint
 
-          <div class="sprint-work-item">
-            Escalar correções de performance
+            </div>
+
           </div>
 
-          <div class="sprint-work-item">
-            Rollout do Premium se validado
+
+          <div class="risk-row">
+
+            <div class="risk">
+              Hipótese do paywall
+              estar errada
+            </div>
+
+            <div class="impact high">
+
+              <span class="impact-dot"></span>
+              Alto
+
+            </div>
+
+            <div class="mitigation">
+
+              Experimento antes
+              do rollout
+
+            </div>
+
           </div>
 
-          <div class="sprint-work-item">
-            Entregar MVP Comercial se justificável
+
+          <div class="risk-row">
+
+            <div class="risk">
+              Compromisso comercial
+              já assumido
+            </div>
+
+            <div class="impact high">
+
+              <span class="impact-dot"></span>
+              Alto
+
+            </div>
+
+            <div class="mitigation">
+
+              Validar deadline,
+              receita e MVP no início
+
+            </div>
+
           </div>
 
+
+          <div class="risk-row">
+
+            <div class="risk">
+              Capacidade menor
+              que a planejada
+            </div>
+
+            <div class="impact high">
+
+              <span class="impact-dot"></span>
+              Alto
+
+            </div>
+
+            <div class="mitigation">
+
+              Capacity planning
+              + buffer
+
+            </div>
+
+          </div>
+
+
+          <div class="risk-row">
+
+            <div class="risk">
+              Dependências entre editorias
+              e backlog antigo
+            </div>
+
+            <div class="impact medium">
+
+              <span class="impact-dot"></span>
+              Médio
+
+            </div>
+
+            <div class="mitigation">
+
+              Solução escalável
+              + repriorização dos 11 itens
+
+            </div>
+
+          </div>
+
+
         </div>
-
-      </div>
-
-
-      <div class="scenario-area">
-
-
-        <div class="scenario a">
-
-          <strong>
-            Cenário A · Performance
-          </strong>
-
-          <p>
-            Alto impacto comprovado
-            → escalar correções.
-          </p>
-
-        </div>
-
-
-        <div class="scenario b">
-
-          <strong>
-            Cenário B · Premium
-          </strong>
-
-          <p>
-            Experimento mostra resultado
-            → fazer rollout.
-          </p>
-
-        </div>
-
-
-        <div class="scenario c">
-
-          <strong>
-            Cenário C · Comercial
-          </strong>
-
-          <p>
-            Alto retorno + baixo esforço
-            → entregar MVP.
-          </p>
-
-        </div>
-
 
       </div>
 
@@ -3725,7 +3891,7 @@ body {
     <div class="footer">
 
       <span>
-        Sprint 1 = aprender + corrigir + preparar decisão
+        Sprint 1 = aprender · Sprint 2 = escalar · risco = administrar
       </span>
 
       <span>
@@ -3742,7 +3908,7 @@ body {
 
 
 <!-- =====================================================
-     SLIDE 05 — MÉTRICAS + CONCLUSÃO
+     SLIDE 05 — MÉTRICAS
 ===================================================== -->
 
 <section class="slide">
@@ -3752,7 +3918,7 @@ body {
     <div class="conclusion-shape"></div>
 
     <div class="eyebrow">
-      Métricas · Resultado · Conclusão
+      Métricas · Resultado · Guardrails
     </div>
 
     <h1 class="title">
@@ -3764,25 +3930,27 @@ body {
     </h1>
 
 
-    <div class="final-content">
+    <div class="metrics-slide-content">
 
 
-      <div class="final-statement">
+      <div class="metrics-statement">
 
-        <div class="final-statement-main">
+        <div class="metrics-statement-main">
 
-          O papel do PO não é atender
-          a todos os pedidos.
+          O papel do PO é transformar
+          capacidade escassa em
+          <span class="accent">resultado mensurável.</span>
 
         </div>
 
-        <div class="final-statement-sub">
 
-          É decidir, com critério explícito,
-          qual problema merece a
-          <strong>capacidade escassa agora</strong>
-          — e comunicar com clareza por que
-          os outros esperam.
+        <div class="metrics-statement-sub">
+
+          A entrega é apenas o meio.
+          A decisão funciona quando conseguimos
+          observar mudança no problema que motivou
+          a priorização — sem perder de vista
+          os <strong>guardrails</strong> do produto.
 
         </div>
 
@@ -3792,7 +3960,9 @@ body {
       <div class="metrics-panel">
 
         <div class="metrics-header">
+
           Como saber se a decisão funcionou
+
         </div>
 
 
@@ -3916,7 +4086,7 @@ let currentSlide = 0;
 
 
 /* =========================================================
-   CRIAR NAVEGAÇÃO MOBILE
+   NAVEGAÇÃO MOBILE
 ========================================================= */
 
 function createNavigation() {
@@ -3933,68 +4103,18 @@ function createNavigation() {
       navigation.innerHTML = "";
 
 
-      /*
-         BOTÃO ANTERIOR
-      */
-
-      const previousButton =
+      const previous =
         document.createElement("button");
 
-      previousButton.type = "button";
+      previous.className =
+        "previous";
 
-      previousButton.className =
-        "previous-button";
-
-      previousButton.setAttribute(
-        "aria-label",
-        "Ir para o slide anterior"
-      );
-
-      previousButton.innerHTML = `
-        <span class="nav-arrow">←</span>
-        <span>Anterior</span>
-      `;
+      previous.innerHTML =
+        '<span class="nav-arrow">←</span>' +
+        '<span>Anterior</span>';
 
 
-      /*
-         INDICADOR CENTRAL
-      */
-
-      const center =
-        document.createElement("span");
-
-      center.className =
-        "nav-center";
-
-
-      /*
-         BOTÃO PRÓXIMO
-      */
-
-      const nextButton =
-        document.createElement("button");
-
-      nextButton.type = "button";
-
-      nextButton.className =
-        "next-button";
-
-      nextButton.setAttribute(
-        "aria-label",
-        "Ir para o próximo slide"
-      );
-
-      nextButton.innerHTML = `
-        <span>Próximo</span>
-        <span class="nav-arrow">→</span>
-      `;
-
-
-      /*
-         EVENTOS DOS BOTÕES
-      */
-
-      previousButton.addEventListener(
+      previous.addEventListener(
         "click",
         function(event) {
 
@@ -4006,7 +4126,25 @@ function createNavigation() {
       );
 
 
-      nextButton.addEventListener(
+      const counter =
+        document.createElement("div");
+
+      counter.className =
+        "nav-counter";
+
+
+      const next =
+        document.createElement("button");
+
+      next.className =
+        "next";
+
+      next.innerHTML =
+        '<span>Próximo</span>' +
+        '<span class="nav-arrow">→</span>';
+
+
+      next.addEventListener(
         "click",
         function(event) {
 
@@ -4018,17 +4156,11 @@ function createNavigation() {
       );
 
 
-      navigation.appendChild(
-        previousButton
-      );
+      navigation.appendChild(previous);
 
-      navigation.appendChild(
-        center
-      );
+      navigation.appendChild(counter);
 
-      navigation.appendChild(
-        nextButton
-      );
+      navigation.appendChild(next);
 
     }
   );
@@ -4042,91 +4174,43 @@ function createNavigation() {
 
 function updateNavigation() {
 
-  const navigations =
-    document.querySelectorAll(
+  document
+    .querySelectorAll(
       ".mobile-navigation"
+    )
+    .forEach(
+      navigation => {
+
+        const previous =
+          navigation.querySelector(
+            ".previous"
+          );
+
+        const next =
+          navigation.querySelector(
+            ".next"
+          );
+
+        const counter =
+          navigation.querySelector(
+            ".nav-counter"
+          );
+
+
+        previous.disabled =
+          currentSlide === 0;
+
+
+        next.disabled =
+          currentSlide ===
+          slides.length - 1;
+
+
+        counter.textContent =
+          `${currentSlide + 1} / ${slides.length}`;
+
+      }
     );
-
-
-  navigations.forEach(
-    navigation => {
-
-      const previousButton =
-        navigation.querySelector(
-          ".previous-button"
-        );
-
-      const nextButton =
-        navigation.querySelector(
-          ".next-button"
-        );
-
-      const center =
-        navigation.querySelector(
-          ".nav-center"
-        );
-
-
-      /*
-         INDICADOR
-      */
-
-      center.textContent =
-        String(currentSlide + 1)
-          .padStart(2, "0")
-        + " / "
-        + String(slides.length)
-          .padStart(2, "0");
-
-
-      /*
-         PRIMEIRO SLIDE
-      */
-
-      if (
-        currentSlide === 0
-      ) {
-
-        previousButton.classList.add(
-          "disabled"
-        );
-
-      }
-
-      else {
-
-        previousButton.classList.remove(
-          "disabled"
-        );
-
-      }
-
-
-      /*
-         ÚLTIMO SLIDE
-      */
-
-      if (
-        currentSlide ===
-        slides.length - 1
-      ) {
-
-        nextButton.classList.add(
-          "disabled"
-        );
-
-      }
-
-      else {
-
-        nextButton.classList.remove(
-          "disabled"
-        );
-
-      }
-
-    }
-  );
 
 }
 
@@ -4171,11 +4255,8 @@ function showSlide(index) {
 
 
   /*
-     No mobile, sempre retorna
-     para o topo da página.
-
-     O conteúdo de cada slide pode
-     continuar tendo qualquer altura.
+     No mobile, sempre retorna ao topo
+     da nova página.
   */
 
   if (
@@ -4183,8 +4264,11 @@ function showSlide(index) {
   ) {
 
     window.scrollTo({
+
       top: 0,
+
       behavior: "smooth"
+
     });
 
   }
@@ -4198,16 +4282,6 @@ function showSlide(index) {
 
 function nextSlide() {
 
-  if (
-    currentSlide >=
-    slides.length - 1
-  ) {
-
-    return;
-
-  }
-
-
   showSlide(
     currentSlide + 1
   );
@@ -4220,15 +4294,6 @@ function nextSlide() {
 ========================================================= */
 
 function previousSlide() {
-
-  if (
-    currentSlide <= 0
-  ) {
-
-    return;
-
-  }
-
 
   showSlide(
     currentSlide - 1
@@ -4310,14 +4375,13 @@ document.addEventListener(
   function(event) {
 
     /*
-       Não interfere nos controles
-       de navegação nem elementos
-       interativos.
+       Elementos interativos não
+       acionam navegação.
     */
 
     if (
       event.target.closest(
-        "button, a, input, textarea, select, .mobile-navigation"
+        "button, a, input, textarea, select"
       )
     ) {
 
@@ -4327,22 +4391,14 @@ document.addEventListener(
 
 
     /*
-       MOBILE
+       No mobile:
 
-       Mantemos o tap como forma
-       alternativa de navegação.
+       direita  → próximo
+       esquerda → anterior
 
-       Área direita:
-       próximo.
-
-       Área esquerda:
-       anterior.
-
-       Área central:
-       não faz nada.
-
-       Isso evita que um toque acidental
-       no conteúdo faça o slide mudar.
+       A região central não faz nada,
+       evitando navegação acidental
+       durante leitura/rolagem.
     */
 
     if (
@@ -4352,13 +4408,12 @@ document.addEventListener(
       const width =
         window.innerWidth;
 
-
       const x =
         event.clientX;
 
 
       if (
-        x > width * .68
+        x > width * .72
       ) {
 
         nextSlide();
@@ -4366,7 +4421,7 @@ document.addEventListener(
       }
 
       else if (
-        x < width * .32
+        x < width * .28
       ) {
 
         previousSlide();
@@ -4379,9 +4434,7 @@ document.addEventListener(
 
 
     /*
-       DESKTOP
-
-       Mantém a lógica anterior:
+       Desktop:
        metade direita = próximo
        metade esquerda = anterior
     */
@@ -4477,8 +4530,8 @@ document.addEventListener(
 
 
     /*
-       Movimento vertical é
-       rolagem normal.
+       Movimento vertical continua sendo
+       rolagem normal da página.
     */
 
     if (
@@ -4492,7 +4545,7 @@ document.addEventListener(
 
 
     /*
-       Distância mínima
+       Distância mínima.
     */
 
     if (
@@ -4505,7 +4558,7 @@ document.addEventListener(
 
 
     /*
-       Evita swipe muito lento
+       Evita swipe muito lento.
     */
 
     if (
@@ -4517,10 +4570,6 @@ document.addEventListener(
     }
 
 
-    /*
-       Esquerda → próximo
-    */
-
     if (
       distanceX < 0
     ) {
@@ -4528,10 +4577,6 @@ document.addEventListener(
       nextSlide();
 
     }
-
-    /*
-       Direita → anterior
-    */
 
     else {
 
