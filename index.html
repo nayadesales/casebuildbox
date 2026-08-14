@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta
   name="viewport"
-  content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  content="width=device-width, initial-scale=1.0"
 >
 
-<title>Case — Product Owner Pleno | Nayade Sales</title>
+<title>
+  Case — Product Owner Pleno | Nayade Sales
+</title>
+
 
 <style>
 
@@ -16,22 +21,28 @@
 ========================================================= */
 
 * {
+
   box-sizing: border-box;
+
   margin: 0;
+
   padding: 0;
+
 }
+
 
 html,
 body {
+
   width: 100%;
-  min-height: 100%;
+
+  height: 100%;
+
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
+
   font-family:
     Inter,
     ui-sans-serif,
@@ -42,9 +53,11 @@ body {
     sans-serif;
 
   background: #171714;
+
   color: #24231f;
 
-  overflow-x: hidden;
+  overflow: hidden;
+
 }
 
 
@@ -55,19 +68,25 @@ body {
 :root {
 
   --paper: #f4f0e8;
+
   --paper-soft: #ebe6dc;
 
   --ink: #24231f;
+
   --muted: #6d6960;
+
   --light-muted: #8c877c;
 
   --sage: #a8b7a2;
+
   --sage-dark: #536450;
 
   --mauve: #b6a1ad;
+
   --mauve-dark: #695661;
 
   --terracotta: #c58a72;
+
   --terracotta-dark: #7b4e3e;
 
   --sand: #d6c5a5;
@@ -78,6 +97,7 @@ body {
 
   --shadow:
     0 18px 45px rgba(0, 0, 0, .12);
+
 }
 
 
@@ -88,10 +108,13 @@ body {
 .presentation {
 
   width: 100vw;
-  min-height: 100vh;
+
+  height: 100vh;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   background:
@@ -100,18 +123,16 @@ body {
       rgba(255,255,255,.05),
       transparent 45%
     );
+
 }
 
-
-/* =========================================================
-   SLIDES — DESKTOP
-========================================================= */
 
 .slide {
 
   position: absolute;
 
   width: 100vw;
+
   height: 100vh;
 
   inset: 0;
@@ -119,14 +140,18 @@ body {
   display: none;
 
   align-items: center;
+
   justify-content: center;
 
   padding: 2.5vh 3vw;
+
 }
 
 
 .slide.active {
+
   display: flex;
+
 }
 
 
@@ -139,6 +164,7 @@ body {
   position: relative;
 
   width: min(94vw, 1600px);
+
   height: min(92vh, 900px);
 
   min-height: 600px;
@@ -156,12 +182,9 @@ body {
     48px
     86px
     48px;
+
 }
 
-
-/*
-   Linha de separação do footer.
-*/
 
 .canvas::after {
 
@@ -170,6 +193,7 @@ body {
   position: absolute;
 
   left: 48px;
+
   right: 48px;
 
   bottom: 62px;
@@ -179,6 +203,7 @@ body {
   background: var(--line);
 
   pointer-events: none;
+
 }
 
 
@@ -205,6 +230,7 @@ body {
   color: var(--muted);
 
   margin-bottom: 17px;
+
 }
 
 
@@ -225,11 +251,14 @@ body {
   font-weight: 700;
 
   margin-bottom: 25px;
+
 }
 
 
 .accent {
+
   color: var(--terracotta-dark);
+
 }
 
 
@@ -260,30 +289,43 @@ body {
   margin-right: 4px;
 
   margin-bottom: 4px;
+
 }
 
 
 .tag.gray {
+
   background: var(--gray-tag);
+
   color: #5f5b54;
+
 }
 
 
 .tag.sage {
+
   background: var(--sage);
+
   color: #30402f;
+
 }
 
 
 .tag.mauve {
+
   background: var(--mauve);
+
   color: #4f4048;
+
 }
 
 
 .tag.terracotta {
+
   background: var(--terracotta);
+
   color: #56352c;
+
 }
 
 
@@ -298,6 +340,7 @@ body {
   z-index: 20;
 
   left: 48px;
+
   right: 48px;
 
   bottom: 23px;
@@ -319,6 +362,7 @@ body {
   color: var(--muted);
 
   letter-spacing: .02em;
+
 }
 
 
@@ -327,6 +371,7 @@ body {
   font-weight: 700;
 
   color: var(--ink);
+
 }
 
 
@@ -335,12 +380,16 @@ body {
 ========================================================= */
 
 .cover {
+
   background: #171714;
+
 }
 
 
 .cover .canvas {
+
   background: var(--paper);
+
 }
 
 
@@ -349,9 +398,11 @@ body {
   position: absolute;
 
   width: 620px;
+
   height: 620px;
 
   right: -210px;
+
   top: -240px;
 
   border-radius: 50%;
@@ -359,6 +410,7 @@ body {
   background: var(--sage);
 
   opacity: .72;
+
 }
 
 
@@ -369,9 +421,11 @@ body {
   position: absolute;
 
   width: 360px;
+
   height: 360px;
 
   right: 110px;
+
   bottom: -210px;
 
   border-radius: 50%;
@@ -379,6 +433,7 @@ body {
   background: var(--terracotta);
 
   opacity: .8;
+
 }
 
 
@@ -387,6 +442,7 @@ body {
   margin-top: 30px;
 
   color: var(--muted);
+
 }
 
 
@@ -405,11 +461,14 @@ body {
   letter-spacing: -.065em;
 
   font-weight: 750;
+
 }
 
 
 .cover-title span {
+
   color: var(--terracotta-dark);
+
 }
 
 
@@ -424,6 +483,7 @@ body {
   font-size: 18px;
 
   color: var(--muted);
+
 }
 
 
@@ -442,6 +502,7 @@ body {
   font-weight: 800;
 
   letter-spacing: .08em;
+
 }
 
 
@@ -454,9 +515,11 @@ body {
   position: absolute;
 
   width: 400px;
+
   height: 400px;
 
   right: -150px;
+
   top: -140px;
 
   border-radius: 50%;
@@ -464,6 +527,7 @@ body {
   background: var(--sand);
 
   opacity: .42;
+
 }
 
 
@@ -474,6 +538,7 @@ body {
   font-size: clamp(35px, 3.7vw, 56px);
 
   margin-bottom: 28px;
+
 }
 
 
@@ -494,6 +559,7 @@ body {
     minmax(550px, 1.65fr);
 
   gap: 38px;
+
 }
 
 
@@ -506,6 +572,7 @@ body {
   justify-content: flex-start;
 
   padding-top: 18px;
+
 }
 
 
@@ -520,6 +587,7 @@ body {
   font-weight: 750;
 
   color: var(--terracotta-dark);
+
 }
 
 
@@ -532,6 +600,7 @@ body {
   font-weight: 700;
 
   color: var(--muted);
+
 }
 
 
@@ -546,11 +615,14 @@ body {
   line-height: 1.48;
 
   color: var(--ink);
+
 }
 
 
 .context-left > div:last-child {
+
   margin-top: 25px !important;
+
 }
 
 
@@ -565,6 +637,7 @@ body {
   gap: 14px;
 
   min-height: 0;
+
 }
 
 
@@ -581,16 +654,21 @@ body {
   min-height: 0;
 
   overflow: hidden;
+
 }
 
 
 .context-card.problem {
+
   border-top: 4px solid var(--sage);
+
 }
 
 
 .context-card.request {
+
   border-top: 4px solid var(--terracotta);
+
 }
 
 
@@ -605,6 +683,7 @@ body {
   gap: 12px;
 
   margin-bottom: 13px;
+
 }
 
 
@@ -613,6 +692,7 @@ body {
   font-size: 16px;
 
   letter-spacing: -.02em;
+
 }
 
 
@@ -625,6 +705,7 @@ body {
   flex-direction: column;
 
   gap: 10px;
+
 }
 
 
@@ -635,6 +716,7 @@ body {
   line-height: 1.28;
 
   color: var(--muted);
+
 }
 
 
@@ -643,6 +725,7 @@ body {
   font-size: 11px;
 
   color: var(--ink);
+
 }
 
 
@@ -665,6 +748,7 @@ body {
   background: var(--ink);
 
   color: var(--paper);
+
 }
 
 
@@ -673,6 +757,7 @@ body {
   font-size: 13px;
 
   white-space: nowrap;
+
 }
 
 
@@ -683,6 +768,7 @@ body {
   line-height: 1.3;
 
   color: rgba(244,240,232,.75);
+
 }
 
 
@@ -707,6 +793,7 @@ body {
     minmax(360px, .92fr);
 
   gap: 38px;
+
 }
 
 
@@ -717,6 +804,7 @@ body {
   display: flex;
 
   flex-direction: column;
+
 }
 
 
@@ -757,6 +845,7 @@ body {
       rgba(36,35,31,.08) 75%,
       transparent 75.2%
     );
+
 }
 
 
@@ -783,6 +872,7 @@ body {
   color: var(--muted);
 
   white-space: nowrap;
+
 }
 
 
@@ -801,6 +891,7 @@ body {
   letter-spacing: .08em;
 
   color: var(--muted);
+
 }
 
 
@@ -817,6 +908,7 @@ body {
   gap: 6px;
 
   white-space: nowrap;
+
 }
 
 
@@ -829,7 +921,9 @@ body {
   border-radius: 50%;
 
   box-shadow:
-    0 0 0 4px rgba(244,240,232,.9);
+    0 0 0 4px
+    rgba(244,240,232,.9);
+
 }
 
 
@@ -846,6 +940,7 @@ body {
   padding: 2px 4px;
 
   border-radius: 4px;
+
 }
 
 
@@ -860,6 +955,7 @@ body {
   gap: 18px;
 
   margin-top: 20px;
+
 }
 
 
@@ -872,6 +968,7 @@ body {
   line-height: 1.4;
 
   color: var(--muted);
+
 }
 
 
@@ -884,6 +981,7 @@ body {
   min-width: 0;
 
   min-height: 0;
+
 }
 
 
@@ -898,6 +996,7 @@ body {
   margin-bottom: 15px;
 
   max-width: 470px;
+
 }
 
 
@@ -908,6 +1007,7 @@ body {
   flex-direction: column;
 
   gap: 10px;
+
 }
 
 
@@ -915,7 +1015,8 @@ body {
 
   display: grid;
 
-  grid-template-columns: 28px auto 1fr;
+  grid-template-columns:
+    28px auto 1fr;
 
   align-items: start;
 
@@ -928,6 +1029,7 @@ body {
   background: rgba(255,255,255,.48);
 
   border: 1px solid var(--line);
+
 }
 
 
@@ -940,6 +1042,7 @@ body {
   color: var(--light-muted);
 
   padding-top: 5px;
+
 }
 
 
@@ -948,6 +1051,7 @@ body {
   font-size: 13px;
 
   margin-top: 4px;
+
 }
 
 
@@ -960,6 +1064,7 @@ body {
   color: var(--muted);
 
   margin-top: 3px;
+
 }
 
 
@@ -970,6 +1075,7 @@ body {
   padding-top: 14px;
 
   border-top: 1px solid var(--line);
+
 }
 
 
@@ -986,6 +1092,7 @@ body {
   color: var(--muted);
 
   margin-bottom: 7px;
+
 }
 
 
@@ -994,6 +1101,7 @@ body {
   display: flex;
 
   flex-wrap: wrap;
+
 }
 
 
@@ -1025,14 +1133,9 @@ body {
   column-gap: 28px;
 
   row-gap: 20px;
+
 }
 
-
-/*
-   Ajuste original do Sprint 1:
-   a caixa pode crescer internamente sem cortar
-   os itens de trabalho.
-*/
 
 .sprint-box {
 
@@ -1046,21 +1149,28 @@ body {
 
   background: rgba(255,255,255,.48);
 
+  /*
+     Alteração específica:
+     a caixa agora permite que o conteúdo
+     tenha altura natural sem cortar os itens.
+  */
+
   overflow: visible;
 
-  min-height: 0;
 }
 
 
 .sprint-box:first-child {
 
   border-top: 5px solid var(--sage);
+
 }
 
 
 .sprint-box:last-of-type {
 
   border-top: 5px solid var(--mauve);
+
 }
 
 
@@ -1071,6 +1181,7 @@ body {
   margin-top: 13px;
 
   letter-spacing: -.03em;
+
 }
 
 
@@ -1085,6 +1196,7 @@ body {
   margin-top: 9px;
 
   max-width: 320px;
+
 }
 
 
@@ -1097,6 +1209,7 @@ body {
   gap: 7px;
 
   margin-top: 20px;
+
 }
 
 
@@ -1114,9 +1227,12 @@ body {
 
   color: var(--ink);
 
-  min-width: 0;
 }
 
+
+/* =========================================================
+   CHECKPOINT
+========================================================= */
 
 .checkpoint-center {
 
@@ -1129,6 +1245,7 @@ body {
   justify-content: center;
 
   position: relative;
+
 }
 
 
@@ -1137,8 +1254,6 @@ body {
   width: 105px;
 
   height: 105px;
-
-  flex: 0 0 auto;
 
   border-radius: 50%;
 
@@ -1159,6 +1274,7 @@ body {
   line-height: 1.2;
 
   font-weight: 700;
+
 }
 
 
@@ -1169,6 +1285,7 @@ body {
   color: var(--terracotta-dark);
 
   margin-top: 6px;
+
 }
 
 
@@ -1183,8 +1300,13 @@ body {
   color: var(--muted);
 
   margin-top: 4px;
+
 }
 
+
+/* =========================================================
+   CENÁRIOS
+========================================================= */
 
 .scenario-area {
 
@@ -1192,9 +1314,11 @@ body {
 
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:
+    repeat(3, 1fr);
 
   gap: 12px;
+
 }
 
 
@@ -1207,21 +1331,31 @@ body {
   min-width: 0;
 
   overflow: hidden;
+
 }
 
 
 .scenario.a {
-  background: rgba(168,183,162,.38);
+
+  background:
+    rgba(168,183,162,.38);
+
 }
 
 
 .scenario.b {
-  background: rgba(182,161,173,.38);
+
+  background:
+    rgba(182,161,173,.38);
+
 }
 
 
 .scenario.c {
-  background: rgba(197,138,114,.35);
+
+  background:
+    rgba(197,138,114,.35);
+
 }
 
 
@@ -1232,6 +1366,7 @@ body {
   font-size: 10px;
 
   margin-bottom: 5px;
+
 }
 
 
@@ -1242,6 +1377,7 @@ body {
   line-height: 1.3;
 
   color: var(--muted);
+
 }
 
 
@@ -1254,9 +1390,11 @@ body {
   position: absolute;
 
   width: 460px;
+
   height: 460px;
 
   right: -180px;
+
   bottom: -190px;
 
   border-radius: 50%;
@@ -1264,6 +1402,7 @@ body {
   background: var(--mauve);
 
   opacity: .35;
+
 }
 
 
@@ -1284,6 +1423,7 @@ body {
     minmax(500px, 1.3fr);
 
   gap: 42px;
+
 }
 
 
@@ -1296,6 +1436,7 @@ body {
   justify-content: center;
 
   padding-bottom: 15px;
+
 }
 
 
@@ -1310,6 +1451,7 @@ body {
   font-weight: 750;
 
   max-width: 460px;
+
 }
 
 
@@ -1324,11 +1466,14 @@ body {
   line-height: 1.5;
 
   color: var(--muted);
+
 }
 
 
 .final-statement-sub strong {
+
   color: var(--ink);
+
 }
 
 
@@ -1343,6 +1488,7 @@ body {
   background: rgba(255,255,255,.5);
 
   border: 1px solid var(--line);
+
 }
 
 
@@ -1355,6 +1501,7 @@ body {
   padding-bottom: 13px;
 
   border-bottom: 1px solid var(--line);
+
 }
 
 
@@ -1369,11 +1516,14 @@ body {
   padding: 12px 0;
 
   border-bottom: 1px solid var(--line);
+
 }
 
 
 .metric-row strong {
+
   font-size: 10px;
+
 }
 
 
@@ -1384,6 +1534,7 @@ body {
   line-height: 1.3;
 
   color: var(--muted);
+
 }
 
 
@@ -1398,6 +1549,7 @@ body {
   gap: 4px;
 
   padding-top: 13px;
+
 }
 
 
@@ -1414,11 +1566,23 @@ body {
   color: var(--muted);
 
   margin-right: 5px;
+
 }
 
 
 /* =========================================================
-   TABLET / TELAS INTERMEDIÁRIAS
+   NAVEGAÇÃO DOS SLIDES
+========================================================= */
+
+.slide-navigation {
+
+  display: none;
+
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE DESKTOP
 ========================================================= */
 
 @media (max-width: 1100px) {
@@ -1426,63 +1590,85 @@ body {
   .canvas {
 
     padding-left: 35px;
+
     padding-right: 35px;
+
   }
+
 
   .canvas::after {
 
     left: 35px;
+
     right: 35px;
+
   }
+
 
   .footer {
 
     left: 35px;
+
     right: 35px;
+
   }
+
 
   .context-layout {
 
     grid-template-columns:
-      1fr
-      1.6fr;
+      1fr 1.6fr;
 
     gap: 25px;
+
   }
+
 
   .prioritization-content {
 
     grid-template-columns:
-      1fr
-      1fr;
+      1fr 1fr;
 
     gap: 25px;
+
   }
+
 
   .execution-content {
 
     column-gap: 15px;
+
   }
+
 }
 
 
 /* =========================================================
-   ALTURAS MENORES
+   ALTURA REDUZIDA
 ========================================================= */
 
-@media (max-height: 760px) and (min-width: 769px) {
+@media (max-height: 760px) {
 
   .canvas {
+
     padding-top: 30px;
+
   }
+
 
   .eyebrow {
+
     margin-bottom: 12px;
+
   }
 
+
   .title {
+
     margin-bottom: 17px;
+
   }
+
 
   .context-layout,
   .prioritization-content,
@@ -1490,1029 +1676,21 @@ body {
   .final-content {
 
     min-height: 390px;
+
   }
 
+
   .context-card {
+
     padding: 14px 16px;
-  }
 
-  .scenario {
-    padding: 10px 12px;
-  }
-}
-
-
-/* =========================================================
-   =========================================================
-   MOBILE
-   =========================================================
-========================================================= */
-
-@media (max-width: 768px) {
-
-  html,
-  body {
-
-    width: 100%;
-
-    min-height: 100%;
-
-    overflow-x: hidden;
-
-    overflow-y: auto;
-  }
-
-
-  body {
-
-    background: var(--paper);
-
-    color: var(--ink);
-  }
-
-
-  .presentation {
-
-    display: block;
-
-    width: 100%;
-
-    min-height: 100svh;
-
-    background: var(--paper);
-  }
-
-
-  /*
-     No mobile não existe mais a lógica de
-     "um slide preso à tela".
-
-     Cada slide vira uma página vertical.
-  */
-
-  .slide {
-
-    position: relative;
-
-    inset: auto;
-
-    width: 100%;
-
-    height: auto;
-
-    min-height: 100svh;
-
-    display: none;
-
-    padding: 0;
-
-    align-items: flex-start;
-
-    justify-content: flex-start;
-  }
-
-
-  /*
-     Mantemos a navegação JS funcionando,
-     mas o slide ativo ocupa toda a altura
-     necessária para seu conteúdo.
-  */
-
-  .slide.active {
-
-    display: block;
-
-    min-height: 100svh;
-  }
-
-
-  /*
-     O canvas deixa de ser uma caixa de
-     altura fixa.
-  */
-
-  .canvas {
-
-    position: relative;
-
-    width: 100%;
-
-    height: auto;
-
-    min-height: 100svh;
-
-    border-radius: 0;
-
-    overflow: visible;
-
-    box-shadow: none;
-
-    padding:
-      34px
-      20px
-      82px
-      20px;
-  }
-
-
-  /*
-     Linha acima do footer.
-  */
-
-  .canvas::after {
-
-    left: 20px;
-
-    right: 20px;
-
-    bottom: 61px;
-  }
-
-
-  /* =====================================================
-     TIPOGRAFIA MOBILE
-  ===================================================== */
-
-  .eyebrow {
-
-    font-size: 9px;
-
-    line-height: 1.3;
-
-    letter-spacing: .12em;
-
-    margin-bottom: 13px;
-  }
-
-
-  .title {
-
-    max-width: none;
-
-    font-size:
-      clamp(31px, 9vw, 43px);
-
-    line-height: 1.02;
-
-    letter-spacing: -.045em;
-
-    margin-bottom: 27px;
-  }
-
-
-  /* =====================================================
-     FOOTER MOBILE
-  ===================================================== */
-
-  .footer {
-
-    position: absolute;
-
-    left: 20px;
-
-    right: 20px;
-
-    bottom: 22px;
-
-    height: auto;
-
-    min-height: 25px;
-
-    display: flex;
-
-    align-items: flex-start;
-
-    justify-content: space-between;
-
-    gap: 15px;
-
-    font-size: 9px;
-
-    line-height: 1.35;
-  }
-
-
-  .footer span:first-child {
-
-    max-width: 72%;
-  }
-
-
-  .footer span:last-child {
-
-    white-space: nowrap;
-  }
-
-
-  /* =====================================================
-     CAPA MOBILE
-  ===================================================== */
-
-  .cover .canvas {
-
-    min-height: 100svh;
-
-    padding:
-      40px
-      24px
-      85px;
-  }
-
-
-  .cover .eyebrow {
-
-    margin-top: 4px;
-
-    max-width: 230px;
-  }
-
-
-  .cover-title {
-
-    margin-top: 62px;
-
-    font-size:
-      clamp(55px, 17vw, 82px);
-
-    line-height: .88;
-  }
-
-
-  .cover-subtitle {
-
-    max-width: 300px;
-
-    margin-top: 25px;
-
-    font-size: 15px;
-
-    line-height: 1.4;
-  }
-
-
-  .cover-name {
-
-    left: 24px;
-
-    bottom: 91px;
-
-    font-size: 15px;
-
-    letter-spacing: .07em;
-  }
-
-
-  .cover-shape {
-
-    width: 420px;
-
-    height: 420px;
-
-    right: -235px;
-
-    top: -180px;
-  }
-
-
-  .cover-shape::after {
-
-    width: 240px;
-
-    height: 240px;
-
-    right: 100px;
-
-    bottom: -135px;
-  }
-
-
-  /* =====================================================
-     CONTEXTO MOBILE
-  ===================================================== */
-
-  .context-shape {
-
-    width: 310px;
-
-    height: 310px;
-
-    right: -175px;
-
-    top: -125px;
-  }
-
-
-  .context-title {
-
-    max-width: none;
-
-    font-size:
-      clamp(31px, 9vw, 43px);
-
-    margin-bottom: 30px;
-  }
-
-
-  .context-layout {
-
-    height: auto;
-
-    min-height: 0;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 28px;
-  }
-
-
-  .context-left {
-
-    padding-top: 0;
-
-  }
-
-
-  .context-big {
-
-    font-size:
-      clamp(72px, 21vw, 105px);
-
-    line-height: .82;
-  }
-
-
-  .context-big-label {
-
-    margin-top: 10px;
-
-    font-size: 14px;
-  }
-
-
-  .context-description {
-
-    max-width: none;
-
-    margin-top: 22px;
-
-    font-size: 14px;
-
-    line-height: 1.55;
-  }
-
-
-  .context-left > div:last-child {
-
-    margin-top: 20px !important;
-  }
-
-
-  .context-right {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 14px;
-
-    min-height: 0;
-  }
-
-
-  .context-card {
-
-    padding: 18px;
-
-    overflow: visible;
-
-    min-height: auto;
-  }
-
-
-  .context-card-head {
-
-    margin-bottom: 15px;
-  }
-
-
-  .context-card h3 {
-
-    font-size: 17px;
-  }
-
-
-  .context-card ul {
-
-    gap: 14px;
-  }
-
-
-  .context-card li {
-
-    font-size: 12px;
-
-    line-height: 1.42;
-  }
-
-
-  .context-card li strong {
-
-    font-size: 12px;
-  }
-
-
-  .context-principle {
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 9px;
-
-    padding: 17px;
-
-    border-radius: 14px;
-  }
-
-
-  .context-principle strong {
-
-    font-size: 13px;
-
-    white-space: normal;
-  }
-
-
-  .context-principle span {
-
-    font-size: 11px;
-
-    line-height: 1.45;
-  }
-
-
-  /* =====================================================
-     PRIORIZAÇÃO MOBILE
-  ===================================================== */
-
-  .prioritization-content {
-
-    height: auto;
-
-    min-height: 0;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 34px;
-  }
-
-
-  .matrix-area {
-
-    width: 100%;
-  }
-
-
-  .matrix {
-
-    flex: none;
-
-    width: 100%;
-
-    height: 310px;
-
-    min-height: 310px;
-  }
-
-
-  .axis-y {
-
-    left: -27px;
-
-    font-size: 8px;
-  }
-
-
-  .axis-x {
-
-    bottom: -22px;
-
-    font-size: 8px;
-  }
-
-
-  .point {
-
-    gap: 5px;
-  }
-
-
-  .point-dot {
-
-    width: 9px;
-
-    height: 9px;
-  }
-
-
-  .point-label {
-
-    font-size: 9px;
-
-    padding: 2px 3px;
-  }
-
-
-  .matrix-note {
-
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 12px;
-
-    margin-top: 28px;
-  }
-
-
-  .matrix-note-text {
-
-    max-width: none;
-
-    font-size: 10px;
-
-    line-height: 1.45;
-  }
-
-
-  .decision-area {
-
-    width: 100%;
-
-    min-height: 0;
-  }
-
-
-  .decision-intro {
-
-    max-width: none;
-
-    font-size: 12px;
-
-    line-height: 1.45;
-
-    margin-bottom: 14px;
-  }
-
-
-  .decision-list {
-
-    gap: 12px;
-  }
-
-
-  .decision-item {
-
-    grid-template-columns:
-      27px
-      auto
-      1fr;
-
-    gap: 8px;
-
-    padding: 13px;
-  }
-
-
-  .decision-item p {
-
-    font-size: 10px;
-
-    line-height: 1.4;
-  }
-
-
-  .decision-bottom {
-
-    margin-top: 25px;
-
-    padding-top: 17px;
-  }
-
-
-  .decision-bottom-tags {
-
-    gap: 2px;
-  }
-
-
-  /* =====================================================
-     EXECUÇÃO MOBILE
-  ===================================================== */
-
-  .execution-content {
-
-    height: auto;
-
-    min-height: 0;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 24px;
-  }
-
-
-  /*
-     Cada sprint passa a ter altura automática.
-     Nada é cortado.
-  */
-
-  .sprint-box {
-
-    width: 100%;
-
-    padding: 19px;
-
-    overflow: visible;
-
-    min-height: auto;
-  }
-
-
-  .sprint-box h3 {
-
-    font-size: 20px;
-
-    margin-top: 12px;
-  }
-
-
-  .sprint-box > p {
-
-    max-width: none;
-
-    font-size: 12px;
-
-    line-height: 1.5;
-
-    margin-top: 10px;
-  }
-
-
-  .sprint-work {
-
-    gap: 8px;
-
-    margin-top: 18px;
-  }
-
-
-  .sprint-work-item {
-
-    padding: 10px 12px;
-
-    font-size: 11px;
-
-    line-height: 1.35;
-  }
-
-
-  /*
-     O checkpoint vira uma seção intermediária
-     entre os dois sprints.
-  */
-
-  .checkpoint-center {
-
-    width: 100%;
-
-    min-height: 165px;
-
-    flex-direction: column;
-
-    justify-content: center;
-  }
-
-
-  .checkpoint-circle {
-
-    width: 92px;
-
-    height: 92px;
-
-    font-size: 10px;
-  }
-
-
-  .checkpoint-arrow {
-
-    transform: rotate(90deg);
-
-    margin-top: 7px;
-
-    font-size: 26px;
-  }
-
-
-  .checkpoint-label {
-
-    font-size: 10px;
-
-    margin-top: 3px;
-  }
-
-
-  /*
-     Cenários ficam empilhados.
-  */
-
-  .scenario-area {
-
-    width: 100%;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 10px;
   }
 
 
   .scenario {
 
-    padding: 14px 15px;
+    padding: 10px 12px;
 
-    overflow: visible;
-  }
-
-
-  .scenario strong {
-
-    font-size: 11px;
-
-    margin-bottom: 6px;
-  }
-
-
-  .scenario p {
-
-    font-size: 11px;
-
-    line-height: 1.4;
-  }
-
-
-  /* =====================================================
-     CONCLUSÃO MOBILE
-  ===================================================== */
-
-  .conclusion-shape {
-
-    width: 350px;
-
-    height: 350px;
-
-    right: -200px;
-
-    bottom: -130px;
-  }
-
-
-  .final-content {
-
-    height: auto;
-
-    min-height: 0;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 34px;
-  }
-
-
-  .final-statement {
-
-    justify-content: flex-start;
-
-    padding-bottom: 0;
-  }
-
-
-  .final-statement-main {
-
-    max-width: none;
-
-    font-size:
-      clamp(32px, 9vw, 44px);
-
-    line-height: 1.02;
-  }
-
-
-  .final-statement-sub {
-
-    max-width: none;
-
-    margin-top: 22px;
-
-    font-size: 14px;
-
-    line-height: 1.55;
-  }
-
-
-  .metrics-panel {
-
-    width: 100%;
-
-    align-self: stretch;
-
-    padding: 18px;
-
-    border-radius: 16px;
-  }
-
-
-  .metrics-header {
-
-    font-size: 13px;
-
-    line-height: 1.3;
-
-    padding-bottom: 13px;
-  }
-
-
-  .metric-row {
-
-    grid-template-columns:
-      1fr;
-
-    gap: 5px;
-
-    padding: 13px 0;
-  }
-
-
-  .metric-row strong {
-
-    font-size: 11px;
-  }
-
-
-  .metric-row span {
-
-    font-size: 11px;
-
-    line-height: 1.4;
-  }
-
-
-  .guardrails {
-
-    align-items: flex-start;
-
-    padding-top: 15px;
-
-    gap: 4px;
-  }
-
-
-  .guardrails-label {
-
-    width: 100%;
-
-    margin-bottom: 3px;
-  }
-
-
-  /* =====================================================
-     TAGS MOBILE
-  ===================================================== */
-
-  .tag {
-
-    min-height: 23px;
-
-    padding: 5px 9px;
-
-    font-size: 9px;
-  }
-
-
-  /* =====================================================
-     DESATIVA TRANSIÇÃO DE SLIDE NO MOBILE
-  ===================================================== */
-
-  .slide,
-  .slide.active,
-  .slide:not(.active) {
-
-    transition: none;
-
-    transform: none;
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE MUITO PEQUENO
-========================================================= */
-
-@media (max-width: 390px) {
-
-  .canvas {
-
-    padding-left: 17px;
-
-    padding-right: 17px;
-  }
-
-
-  .canvas::after {
-
-    left: 17px;
-
-    right: 17px;
-  }
-
-
-  .footer {
-
-    left: 17px;
-
-    right: 17px;
-  }
-
-
-  .cover .canvas {
-
-    padding-left: 20px;
-
-    padding-right: 20px;
-  }
-
-
-  .cover-name {
-
-    left: 20px;
-  }
-
-
-  .title {
-
-    font-size: 31px;
-  }
-
-
-  .context-big {
-
-    font-size: 70px;
-  }
-
-
-  .decision-item {
-
-    grid-template-columns:
-      24px
-      1fr;
-  }
-
-
-  .decision-item > .tag {
-
-    grid-column: 2;
-  }
-
-
-  .decision-item > div:last-child {
-
-    grid-column: 2;
-  }
-
-
-  .matrix {
-
-    height: 275px;
-
-    min-height: 275px;
-  }
-
-
-  .point-label {
-
-    font-size: 8px;
   }
 
 }
@@ -2527,6 +1705,7 @@ body {
   transition:
     opacity .25s ease,
     transform .25s ease;
+
 }
 
 
@@ -2535,6 +1714,7 @@ body {
   opacity: 0;
 
   transform: translateX(15px);
+
 }
 
 
@@ -2543,6 +1723,896 @@ body {
   opacity: 1;
 
   transform: translateX(0);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  html,
+  body {
+
+    width: 100%;
+
+    min-height: 100%;
+
+    height: auto;
+
+  }
+
+
+  body {
+
+    overflow-x: hidden;
+
+    overflow-y: auto;
+
+  }
+
+
+  .presentation {
+
+    width: 100%;
+
+    height: auto;
+
+    min-height: 100vh;
+
+    display: block;
+
+    background: #171714;
+
+  }
+
+
+  .slide {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 100svh;
+
+    height: auto;
+
+    display: none;
+
+    padding: 14px;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+  }
+
+
+  .slide.active {
+
+    display: flex;
+
+  }
+
+
+  .canvas {
+
+    width: 100%;
+
+    height: auto;
+
+    min-height:
+      calc(100svh - 28px);
+
+    padding:
+      28px
+      22px
+      34px
+      22px;
+
+    border-radius: 22px;
+
+    overflow: visible;
+
+  }
+
+
+  .canvas::after {
+
+    display: none;
+
+  }
+
+
+  /* =======================================================
+     FOOTER MOBILE
+  ======================================================= */
+
+  .footer {
+
+    position: relative;
+
+    left: auto;
+
+    right: auto;
+
+    bottom: auto;
+
+    height: auto;
+
+    min-height: 25px;
+
+    margin-top: 40px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid var(--line);
+
+    font-size: 9px;
+
+  }
+
+
+  /* =======================================================
+     TIPOGRAFIA MOBILE
+  ======================================================= */
+
+  .eyebrow {
+
+    font-size: 9px;
+
+    line-height: 1.35;
+
+    margin-bottom: 14px;
+
+  }
+
+
+  .title {
+
+    max-width: none;
+
+    font-size:
+      clamp(31px, 9vw, 42px);
+
+    line-height: 1.02;
+
+    letter-spacing: -.045em;
+
+    margin-bottom: 28px;
+
+  }
+
+
+  /* =======================================================
+     CAPA MOBILE
+  ======================================================= */
+
+  .cover .canvas {
+
+    min-height:
+      calc(100svh - 28px);
+
+    padding:
+      30px
+      22px
+      30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+  }
+
+
+  .cover .eyebrow {
+
+    margin-top: 10px;
+
+  }
+
+
+  .cover-title {
+
+    margin-top: 70px;
+
+    font-size:
+      clamp(58px, 17vw, 82px);
+
+    line-height: .88;
+
+  }
+
+
+  .cover-subtitle {
+
+    margin-top: 24px;
+
+    font-size: 15px;
+
+    line-height: 1.4;
+
+    max-width: 280px;
+
+  }
+
+
+  .cover-name {
+
+    position: relative;
+
+    left: auto;
+
+    bottom: auto;
+
+    margin-top: auto;
+
+    margin-bottom: 30px;
+
+    font-size: 15px;
+
+  }
+
+
+  .cover .footer {
+
+    margin-top: 0;
+
+  }
+
+
+  .cover-shape {
+
+    width: 360px;
+
+    height: 360px;
+
+    right: -150px;
+
+    top: -130px;
+
+  }
+
+
+  .cover-shape::after {
+
+    width: 220px;
+
+    height: 220px;
+
+    right: 70px;
+
+    bottom: -120px;
+
+  }
+
+
+  /* =======================================================
+     CONTEXTO MOBILE
+  ======================================================= */
+
+  .context-title {
+
+    max-width: none;
+
+    font-size:
+      clamp(31px, 8.8vw, 42px);
+
+    margin-bottom: 30px;
+
+  }
+
+
+  .context-layout {
+
+    height: auto;
+
+    min-height: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 28px;
+
+  }
+
+
+  .context-left {
+
+    padding-top: 0;
+
+  }
+
+
+  .context-big {
+
+    font-size:
+      clamp(70px, 21vw, 100px);
+
+  }
+
+
+  .context-description {
+
+    max-width: none;
+
+    margin-top: 24px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+  }
+
+
+  .context-left > div:last-child {
+
+    margin-top: 22px !important;
+
+  }
+
+
+  .context-right {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+  }
+
+
+  .context-card {
+
+    padding: 18px;
+
+    overflow: visible;
+
+  }
+
+
+  .context-card ul {
+
+    gap: 12px;
+
+  }
+
+
+  .context-card li {
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+  }
+
+
+  .context-principle {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    padding: 16px;
+
+  }
+
+
+  .context-principle strong {
+
+    white-space: normal;
+
+    font-size: 12px;
+
+  }
+
+
+  .context-principle span {
+
+    font-size: 10px;
+
+    line-height: 1.45;
+
+  }
+
+
+  /* =======================================================
+     PRIORIZAÇÃO MOBILE
+  ======================================================= */
+
+  .prioritization-content {
+
+    height: auto;
+
+    min-height: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 38px;
+
+  }
+
+
+  .matrix-area {
+
+    width: 100%;
+
+  }
+
+
+  .matrix {
+
+    min-height: 330px;
+
+    width: 100%;
+
+  }
+
+
+  .matrix-note {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+  }
+
+
+  .matrix-note-text {
+
+    max-width: none;
+
+    font-size: 10px;
+
+    line-height: 1.45;
+
+  }
+
+
+  .decision-area {
+
+    width: 100%;
+
+  }
+
+
+  .decision-intro {
+
+    max-width: none;
+
+    font-size: 12px;
+
+    line-height: 1.45;
+
+  }
+
+
+  .decision-list {
+
+    gap: 12px;
+
+  }
+
+
+  .decision-item {
+
+    grid-template-columns:
+      28px auto 1fr;
+
+    padding: 13px;
+
+  }
+
+
+  .decision-item p {
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+  }
+
+
+  .decision-bottom {
+
+    margin-top: 24px;
+
+  }
+
+
+  /* =======================================================
+     EXECUÇÃO MOBILE
+  ======================================================= */
+
+  .execution-content {
+
+    height: auto;
+
+    min-height: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+  }
+
+
+  .sprint-box {
+
+    padding: 20px;
+
+    overflow: visible;
+
+  }
+
+
+  .sprint-box h3 {
+
+    font-size: 18px;
+
+  }
+
+
+  .sprint-box > p {
+
+    max-width: none;
+
+    font-size: 11px;
+
+    line-height: 1.45;
+
+  }
+
+
+  .sprint-work {
+
+    gap: 8px;
+
+    margin-top: 18px;
+
+  }
+
+
+  .sprint-work-item {
+
+    padding: 10px 11px;
+
+    font-size: 10px;
+
+    line-height: 1.35;
+
+  }
+
+
+  .checkpoint-center {
+
+    order: 2;
+
+    padding: 8px 0;
+
+  }
+
+
+  .checkpoint-circle {
+
+    width: 92px;
+
+    height: 92px;
+
+    font-size: 10px;
+
+  }
+
+
+  .checkpoint-arrow {
+
+    transform: rotate(90deg);
+
+    margin-top: 10px;
+
+  }
+
+
+  .checkpoint-label {
+
+    font-size: 9px;
+
+  }
+
+
+  .scenario-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+  }
+
+
+  .scenario {
+
+    padding: 14px;
+
+    overflow: visible;
+
+  }
+
+
+  .scenario p {
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+  }
+
+
+  /* =======================================================
+     CONCLUSÃO MOBILE
+  ======================================================= */
+
+  .final-content {
+
+    height: auto;
+
+    min-height: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 34px;
+
+  }
+
+
+  .final-statement {
+
+    padding-bottom: 0;
+
+    justify-content: flex-start;
+
+  }
+
+
+  .final-statement-main {
+
+    max-width: none;
+
+    font-size:
+      clamp(30px, 8vw, 42px);
+
+  }
+
+
+  .final-statement-sub {
+
+    max-width: none;
+
+    margin-top: 22px;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+  }
+
+
+  .metrics-panel {
+
+    align-self: stretch;
+
+    padding: 18px;
+
+  }
+
+
+  .metric-row {
+
+    grid-template-columns:
+      90px 1fr;
+
+    gap: 12px;
+
+    padding: 12px 0;
+
+  }
+
+
+  .metric-row span {
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+  }
+
+
+  .guardrails {
+
+    align-items: flex-start;
+
+  }
+
+
+  /* =======================================================
+     NAVEGAÇÃO MOBILE
+  ======================================================= */
+
+  .slide-navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid var(--line);
+
+  }
+
+
+  .slide-navigation button {
+
+    appearance: none;
+
+    border: 0;
+
+    background: transparent;
+
+    color: var(--muted);
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: .04em;
+
+    padding: 10px 4px;
+
+    cursor: pointer;
+
+  }
+
+
+  .slide-navigation button:active {
+
+    transform: scale(.96);
+
+  }
+
+
+  .slide-navigation button:disabled {
+
+    opacity: .28;
+
+    cursor: default;
+
+  }
+
+
+  .slide-navigation .slide-counter {
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    color: var(--light-muted);
+
+    letter-spacing: .08em;
+
+  }
+
+}
+
+
+/* =========================================================
+   TELAS MUITO PEQUENAS
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .slide {
+
+    padding: 10px;
+
+  }
+
+
+  .canvas {
+
+    padding:
+      24px
+      18px
+      80px
+      18px;
+
+    border-radius: 19px;
+
+  }
+
+
+  .title {
+
+    font-size: 30px;
+
+  }
+
+
+  .cover-title {
+
+    font-size: 55px;
+
+  }
+
+
+  .context-card {
+
+    padding: 15px;
+
+  }
+
+
+  .decision-item {
+
+    grid-template-columns:
+      24px 1fr;
+
+  }
+
+
+  .decision-item > .tag {
+
+    grid-column: 2;
+
+    grid-row: 1;
+
+    justify-self: start;
+
+  }
+
+
+  .decision-item > div:last-child {
+
+    grid-column: 2;
+
+  }
+
+
+  .metric-row {
+
+    grid-template-columns: 1fr;
+
+    gap: 5px;
+
+  }
+
 }
 
 
@@ -2555,9 +2625,11 @@ body {
   background: var(--terracotta);
 
   color: var(--ink);
+
 }
 
 </style>
+
 </head>
 
 
@@ -2577,31 +2649,50 @@ body {
 
     <div class="blob cover-shape"></div>
 
+
     <div class="eyebrow">
+
       Processo seletivo · Product Owner Pleno
+
     </div>
+
 
     <h1 class="cover-title">
+
       Case —<br>
+
       Product <span>Owner</span>
+
     </h1>
 
+
     <div class="cover-subtitle">
+
       Priorização de produto sob capacidade restrita
+
     </div>
 
+
     <div class="cover-name">
+
       NAYADE SALES
+
     </div>
+
 
     <div class="footer">
 
       <span>
+
         Buildbox · Product Owner Pleno
+
       </span>
 
+
       <span>
+
         01 / 05
+
       </span>
 
     </div>
@@ -2621,51 +2712,80 @@ body {
 
     <div class="context-shape"></div>
 
+
     <div class="eyebrow">
+
       Contexto · O problema por trás dos pedidos
+
     </div>
 
+
     <h1 class="title context-title">
+
       Alta demanda, capacidade quase
+
       <span class="accent">zero</span>
+
       para atendê-la.
+
     </h1>
 
 
     <div class="context-layout">
 
 
+      <!-- CONTEXTO -->
+
       <div class="context-left">
 
+
         <div class="context-big">
+
           2,5M
+
         </div>
 
+
         <div class="context-big-label">
+
           visitas / mês
+
         </div>
+
 
         <div class="context-description">
 
           O desafio não é encontrar trabalho.
+
           É decidir onde a capacidade limitada
+
           gera mais impacto, considerando
+
           evidência, urgência, risco e prazo.
 
         </div>
 
+
         <div>
 
           <span class="tag gray">
+
             4 editorias
+
           </span>
 
+
           <span class="tag gray">
+
             2 sprints
+
           </span>
 
+
           <span class="tag gray">
+
             1 dev parcial
+
           </span>
 
         </div>
@@ -2673,52 +2793,110 @@ body {
       </div>
 
 
+      <!-- PROBLEMAS + PEDIDOS -->
+
       <div class="context-right">
 
 
         <div class="context-card problem">
 
+
           <div class="context-card-head">
 
             <h3>
+
               Problemas
+
             </h3>
 
+
             <span class="tag sage">
+
               Evidência
+
             </span>
 
           </div>
 
+
           <ul>
 
+
             <li>
-              <strong>Performance</strong><br>
+
+              <strong>
+
+                Performance
+
+              </strong>
+
+              <br>
+
               <span>
+
                 LCP acima de 4s em 40% das páginas.
+
               </span>
+
             </li>
 
+
             <li>
-              <strong>Premium</strong><br>
+
+              <strong>
+
+                Premium
+
+              </strong>
+
+              <br>
+
               <span>
+
                 Conversão em 0,6% vs. meta de 1,2%.
+
               </span>
+
             </li>
 
+
             <li>
-              <strong>SEO Saúde</strong><br>
+
+              <strong>
+
+                SEO Saúde
+
+              </strong>
+
+              <br>
+
               <span>
+
                 Queda para 18% do tráfego orgânico.
+
               </span>
+
             </li>
 
+
             <li>
-              <strong>Backlog</strong><br>
+
+              <strong>
+
+                Backlog
+
+              </strong>
+
+              <br>
+
               <span>
+
                 11 itens represados sem relevância revalidada.
+
               </span>
+
             </li>
+
 
           </ul>
 
@@ -2727,43 +2905,90 @@ body {
 
         <div class="context-card request">
 
+
           <div class="context-card-head">
 
             <h3>
+
               Pedidos
+
             </h3>
 
+
             <span class="tag terracotta">
+
               Validar
+
             </span>
 
           </div>
 
+
           <ul>
 
+
             <li>
-              <strong>Comercial</strong><br>
+
+              <strong>
+
+                Comercial
+
+              </strong>
+
+              <br>
+
               <span>
+
                 Deadline sazonal + anunciante representa
+
                 15% da receita de ads.
+
               </span>
+
             </li>
 
+
             <li>
-              <strong>Tags + recomendação</strong><br>
+
+              <strong>
+
+                Tags + recomendação
+
+              </strong>
+
+              <br>
+
               <span>
+
                 Solução já proposta, mas hipótese
+
                 de engajamento ainda não validada.
+
               </span>
+
             </li>
 
+
             <li>
-              <strong>Demandas editoriais</strong><br>
+
+              <strong>
+
+                Demandas editoriais
+
+              </strong>
+
+              <br>
+
               <span>
+
                 Pressão por entrega sem evidência
+
                 equivalente de impacto.
+
               </span>
+
             </li>
+
 
           </ul>
 
@@ -2772,15 +2997,24 @@ body {
 
         <div class="context-principle">
 
+
           <strong>
+
             Priorizar problemas, não pedidos.
+
           </strong>
 
+
           <span>
+
             O pedido é uma entrada.
+
             O problema mensurado é o que permite
+
             decidir se aquela demanda merece capacidade agora.
+
           </span>
+
 
         </div>
 
@@ -2792,11 +3026,16 @@ body {
     <div class="footer">
 
       <span>
+
         Case — Product Owner · Buildbox
+
       </span>
 
+
       <span>
+
         02 / 05
+
       </span>
 
     </div>
@@ -2814,29 +3053,45 @@ body {
 
   <div class="canvas">
 
+
     <div class="eyebrow">
+
       Priorização · Decisão
+
     </div>
 
+
     <h1 class="title">
+
       Impacto importa — mas precisa caber na
+
       <span class="accent">capacidade.</span>
+
     </h1>
 
 
     <div class="prioritization-content">
 
 
+      <!-- MATRIZ -->
+
       <div class="matrix-area">
+
 
         <div class="matrix">
 
+
           <div class="axis-y">
+
             Impacto / urgência ↑
+
           </div>
 
+
           <div class="axis-x">
+
             Esforço →
+
           </div>
 
 
@@ -2850,8 +3105,11 @@ body {
               style="background:var(--sage)"
             ></span>
 
+
             <span class="point-label">
+
               Performance
+
             </span>
 
           </div>
@@ -2867,8 +3125,11 @@ body {
               style="background:var(--mauve)"
             ></span>
 
+
             <span class="point-label">
+
               Premium
+
             </span>
 
           </div>
@@ -2884,8 +3145,11 @@ body {
               style="background:var(--terracotta)"
             ></span>
 
+
             <span class="point-label">
+
               Comercial
+
             </span>
 
           </div>
@@ -2901,8 +3165,11 @@ body {
               style="background:var(--sand)"
             ></span>
 
+
             <span class="point-label">
+
               SEO Saúde
+
             </span>
 
           </div>
@@ -2918,8 +3185,11 @@ body {
               style="background:var(--sand)"
             ></span>
 
+
             <span class="point-label">
+
               Tags
+
             </span>
 
           </div>
@@ -2935,38 +3205,56 @@ body {
               style="background:var(--sand)"
             ></span>
 
+
             <span class="point-label">
+
               Backlog
+
             </span>
 
           </div>
+
 
         </div>
 
 
         <div class="matrix-note">
 
+
           <div class="matrix-note-text">
 
             Hipótese de priorização com os dados disponíveis.
+
             Esforço, dependências e causa raiz ainda precisam
+
             ser validados durante o primeiro ciclo.
 
           </div>
 
+
           <div>
 
+
             <span class="tag sage">
+
               Delivery
+
             </span>
+
 
             <span class="tag mauve">
+
               Experimento
+
             </span>
 
+
             <span class="tag terracotta">
+
               MVP
+
             </span>
+
 
           </div>
 
@@ -2975,12 +3263,17 @@ body {
       </div>
 
 
+      <!-- DECISÃO -->
+
       <div class="decision-area">
+
 
         <div class="decision-intro">
 
           Com capacidade restrita, a ordem considera
+
           impacto, urgência, risco, esforço e confiança
+
           na evidência.
 
         </div>
@@ -2991,23 +3284,37 @@ body {
 
           <div class="decision-item">
 
+
             <div class="decision-number">
+
               01
+
             </div>
+
 
             <span class="tag sage">
+
               Delivery
+
             </span>
+
 
             <div>
 
+
               <h3>
+
                 Performance
+
               </h3>
 
+
               <p>
+
                 Corrigir a principal causa do LCP crítico
+
                 nas páginas afetadas.
+
               </p>
 
             </div>
@@ -3017,23 +3324,37 @@ body {
 
           <div class="decision-item">
 
+
             <div class="decision-number">
+
               02
+
             </div>
+
 
             <span class="tag mauve">
+
               Experimento
+
             </span>
+
 
             <div>
 
+
               <h3>
+
                 Premium
+
               </h3>
 
+
               <p>
+
                 Validar a hipótese do paywall
+
                 antes de qualquer rollout.
+
               </p>
 
             </div>
@@ -3043,51 +3364,80 @@ body {
 
           <div class="decision-item">
 
+
             <div class="decision-number">
+
               03
+
             </div>
 
+
             <span class="tag terracotta">
+
               MVP
+
             </span>
+
 
             <div>
 
+
               <h3>
+
                 Comercial
+
               </h3>
 
+
               <p>
+
                 Dimensionar a oportunidade e atender
+
                 se retorno × esforço justificar.
+
               </p>
 
             </div>
 
           </div>
+
 
         </div>
 
 
         <div class="decision-bottom">
 
+
           <div class="decision-bottom-label">
+
             Fora do delivery imediato
+
           </div>
+
 
           <div class="decision-bottom-tags">
 
+
             <span class="tag gray">
+
               SEO Saúde · discovery conectado à performance
+
             </span>
 
+
             <span class="tag gray">
+
               Tags · hipótese não validada
+
             </span>
 
+
             <span class="tag gray">
+
               Backlog · revalidação
+
             </span>
+
 
           </div>
 
@@ -3101,11 +3451,16 @@ body {
     <div class="footer">
 
       <span>
+
         Decisão explícita + ordem de execução
+
       </span>
 
+
       <span>
+
         03 / 05
+
       </span>
 
     </div>
@@ -3123,153 +3478,250 @@ body {
 
   <div class="canvas">
 
+
     <div class="eyebrow">
+
       Execução · Sprint 1 → Checkpoint → Sprint 2
+
     </div>
 
+
     <h1 class="title">
+
       A Sprint 2 só escala aquilo que a
+
       <span class="accent">Sprint 1 comprovar.</span>
+
     </h1>
 
 
     <div class="execution-content">
 
 
+      <!-- SPRINT 1 -->
+
       <div class="sprint-box">
 
+
         <span class="tag sage">
+
           Sprint 1
+
         </span>
 
+
         <h3>
+
           Aprender + corrigir
+
         </h3>
 
+
         <p>
+
           Usar o primeiro ciclo para reduzir incerteza,
+
           atacar o problema mais crítico e preparar
+
           a decisão seguinte.
+
         </p>
+
 
         <div class="sprint-work">
 
+
           <div class="sprint-work-item">
+
             Performance: diagnóstico + MVP
+
           </div>
 
+
           <div class="sprint-work-item">
+
             Premium: instrumentação + experimento
+
           </div>
 
+
           <div class="sprint-work-item">
+
             Comercial: deadline + sizing
+
           </div>
 
+
           <div class="sprint-work-item">
+
             SEO + backlog: discovery
+
           </div>
+
 
         </div>
 
       </div>
 
+
+      <!-- CHECKPOINT -->
 
       <div class="checkpoint-center">
 
+
         <div class="checkpoint-circle">
+
           Checkpoint<br>
+
           de decisão
+
         </div>
+
 
         <div class="checkpoint-arrow">
+
           →
+
         </div>
 
+
         <div class="checkpoint-label">
+
           Evidência<br>
+
           → próximo compromisso
+
         </div>
 
       </div>
 
+
+      <!-- SPRINT 2 -->
 
       <div class="sprint-box">
 
+
         <span class="tag mauve">
+
           Sprint 2
+
         </span>
 
+
         <h3>
+
           Escalar o que funcionou
+
         </h3>
 
+
         <p>
+
           A capacidade do segundo ciclo permanece
+
           condicional aos resultados observados
+
           no primeiro.
+
         </p>
+
 
         <div class="sprint-work">
 
+
           <div class="sprint-work-item">
+
             Escalar correções de performance
+
           </div>
 
+
           <div class="sprint-work-item">
+
             Rollout do Premium se validado
+
           </div>
 
+
           <div class="sprint-work-item">
+
             Entregar MVP Comercial se justificável
+
           </div>
+
 
         </div>
 
       </div>
 
+
+      <!-- CENÁRIOS -->
 
       <div class="scenario-area">
 
 
         <div class="scenario a">
 
+
           <strong>
+
             Cenário A · Performance
+
           </strong>
 
+
           <p>
+
             Alto impacto comprovado
+
             → escalar correções.
+
           </p>
+
 
         </div>
 
 
         <div class="scenario b">
 
+
           <strong>
+
             Cenário B · Premium
+
           </strong>
 
+
           <p>
+
             Experimento mostra resultado
+
             → fazer rollout.
+
           </p>
+
 
         </div>
 
 
         <div class="scenario c">
 
+
           <strong>
+
             Cenário C · Comercial
+
           </strong>
 
+
           <p>
+
             Alto retorno + baixo esforço
+
             → entregar MVP.
+
           </p>
+
 
         </div>
 
@@ -3281,13 +3733,20 @@ body {
 
     <div class="footer">
 
-      <span>
-        Sprint 1 = aprender + corrigir + preparar decisão
-      </span>
 
       <span>
-        04 / 05
+
+        Sprint 1 = aprender + corrigir + preparar decisão
+
       </span>
+
+
+      <span>
+
+        04 / 05
+
+      </span>
+
 
     </div>
 
@@ -3304,37 +3763,55 @@ body {
 
   <div class="canvas">
 
+
     <div class="conclusion-shape"></div>
 
+
     <div class="eyebrow">
+
       Métricas · Resultado · Conclusão
+
     </div>
 
+
     <h1 class="title">
+
       Sucesso é
+
       <span class="accent">resultado</span>,
+
       não entrega.
+
     </h1>
 
 
     <div class="final-content">
 
 
+      <!-- CONCLUSÃO -->
+
       <div class="final-statement">
+
 
         <div class="final-statement-main">
 
           O papel do PO não é atender
+
           a todos os pedidos.
 
         </div>
 
+
         <div class="final-statement-sub">
 
           É decidir, com critério explícito,
+
           qual problema merece a
+
           <strong>capacidade escassa agora</strong>
+
           — e comunicar com clareza por que
+
           os outros esperam.
 
         </div>
@@ -3342,86 +3819,135 @@ body {
       </div>
 
 
+      <!-- MÉTRICAS -->
+
       <div class="metrics-panel">
 
+
         <div class="metrics-header">
+
           Como saber se a decisão funcionou
+
         </div>
 
 
         <div class="metric-row">
 
+
           <strong>
+
             Performance
+
           </strong>
 
+
           <span>
+
             % de páginas mobile com LCP acima de 4s
+
           </span>
+
 
         </div>
 
 
         <div class="metric-row">
 
+
           <strong>
+
             Premium
+
           </strong>
 
+
           <span>
+
             Taxa de conversão para assinatura premium
+
           </span>
+
 
         </div>
 
 
         <div class="metric-row">
 
+
           <strong>
+
             SEO
+
           </strong>
 
+
           <span>
+
             Tráfego orgânico da editoria de Saúde
+
           </span>
+
 
         </div>
 
 
         <div class="metric-row">
 
+
           <strong>
+
             Comercial
+
           </strong>
 
+
           <span>
+
             Receita preservada / gerada pela campanha
+
           </span>
+
 
         </div>
 
 
         <div class="guardrails">
 
+
           <div class="guardrails-label">
+
             Guardrails
+
           </div>
 
+
           <span class="tag gray">
+
             UX
+
           </span>
 
+
           <span class="tag gray">
+
             Receita
+
           </span>
 
+
           <span class="tag gray">
+
             Performance
+
           </span>
 
+
           <span class="tag gray">
+
             Engajamento
+
           </span>
+
 
         </div>
 
@@ -3432,14 +3958,22 @@ body {
 
     <div class="footer">
 
-      <span>
-        <strong>NAYADE SALES</strong>
-        · Case — Product Owner · Buildbox
-      </span>
 
       <span>
-        05 / 05
+
+        <strong>NAYADE SALES</strong>
+
+        · Case — Product Owner · Buildbox
+
       </span>
+
+
+      <span>
+
+        05 / 05
+
+      </span>
+
 
     </div>
 
@@ -3465,14 +3999,148 @@ let currentSlide = 0;
 
 
 /* =========================================================
-   DETECTAR MOBILE
+   CRIAÇÃO AUTOMÁTICA DOS CONTROLES
 ========================================================= */
 
-function isMobileLayout() {
+slides.forEach(
+  (slide, index) => {
 
-  return window.matchMedia(
-    "(max-width: 768px)"
-  ).matches;
+
+    const navigation =
+      document.createElement("div");
+
+
+    navigation.className =
+      "slide-navigation";
+
+
+    navigation.innerHTML = `
+
+      <button
+        class="nav-prev"
+        type="button"
+        aria-label="Slide anterior"
+      >
+        ← Anterior
+      </button>
+
+      <span class="slide-counter">
+        ${String(index + 1).padStart(2, "0")}
+        /
+        ${String(slides.length).padStart(2, "0")}
+      </span>
+
+      <button
+        class="nav-next"
+        type="button"
+        aria-label="Próximo slide"
+      >
+        Próximo →
+      </button>
+
+    `;
+
+
+    const footer =
+      slide.querySelector(".footer");
+
+
+    if (footer) {
+
+      footer.parentNode.insertBefore(
+        navigation,
+        footer
+      );
+
+    }
+    else {
+
+      slide
+        .querySelector(".canvas")
+        .appendChild(navigation);
+
+    }
+
+
+    /* =====================================================
+       BOTÃO ANTERIOR
+    ===================================================== */
+
+    navigation
+      .querySelector(".nav-prev")
+      .addEventListener(
+        "click",
+        function(event) {
+
+          event.stopPropagation();
+
+          previousSlide();
+
+        }
+      );
+
+
+    /* =====================================================
+       BOTÃO PRÓXIMO
+    ===================================================== */
+
+    navigation
+      .querySelector(".nav-next")
+      .addEventListener(
+        "click",
+        function(event) {
+
+          event.stopPropagation();
+
+          nextSlide();
+
+        }
+      );
+
+  }
+);
+
+
+/* =========================================================
+   ATUALIZA ESTADO DOS BOTÕES
+========================================================= */
+
+function updateNavigation() {
+
+
+  slides.forEach(
+    (slide, index) => {
+
+
+      const previous =
+        slide.querySelector(
+          ".nav-prev"
+        );
+
+
+      const next =
+        slide.querySelector(
+          ".nav-next"
+        );
+
+
+      if (previous) {
+
+        previous.disabled =
+          index === 0;
+
+      }
+
+
+      if (next) {
+
+        next.disabled =
+          index === slides.length - 1;
+
+      }
+
+    }
+  );
 
 }
 
@@ -3483,39 +4151,57 @@ function isMobileLayout() {
 
 function showSlide(index) {
 
+
   if (index < 0) {
+
     index = 0;
+
   }
+
 
   if (index >= slides.length) {
-    index = slides.length - 1;
+
+    index =
+      slides.length - 1;
+
   }
 
-  slides.forEach((slide, i) => {
 
-    slide.classList.toggle(
-      "active",
-      i === index
-    );
+  slides.forEach(
+    (slide, i) => {
 
-  });
+      slide.classList.toggle(
+        "active",
+        i === index
+      );
+
+    }
+  );
+
 
   currentSlide = index;
 
 
-  /*
-     No desktop, volta para o topo
-     da apresentação.
+  updateNavigation();
 
-     No mobile, cada slide também
-     começa pelo topo quando navegado.
+
+  /*
+     No mobile, ao mudar de slide,
+     volta para o topo da página.
   */
 
-  if (isMobileLayout()) {
+  if (
+    window.matchMedia(
+      "(max-width: 700px)"
+    ).matches
+  ) {
 
     window.scrollTo({
+
       top: 0,
+
       behavior: "smooth"
+
     });
 
   }
@@ -3524,23 +4210,42 @@ function showSlide(index) {
 
 
 /* =========================================================
-   PRÓXIMO
+   PRÓXIMO SLIDE
 ========================================================= */
 
 function nextSlide() {
 
-  showSlide(currentSlide + 1);
+
+  if (
+    currentSlide <
+    slides.length - 1
+  ) {
+
+    showSlide(
+      currentSlide + 1
+    );
+
+  }
 
 }
 
 
 /* =========================================================
-   ANTERIOR
+   SLIDE ANTERIOR
 ========================================================= */
 
 function previousSlide() {
 
-  showSlide(currentSlide - 1);
+
+  if (
+    currentSlide > 0
+  ) {
+
+    showSlide(
+      currentSlide - 1
+    );
+
+  }
 
 }
 
@@ -3553,75 +4258,16 @@ document.addEventListener(
   "keydown",
   function(event) {
 
-    /*
-       No mobile normalmente não existe
-       teclado físico.
-
-       No desktop a navegação permanece
-       exatamente como antes.
-    */
-
-    if (isMobileLayout()) {
-
-      /*
-         Apenas teclas de navegação explícita
-         continuam funcionando.
-      */
-
-      switch (event.key) {
-
-        case "ArrowRight":
-        case "PageDown":
-
-          event.preventDefault();
-
-          nextSlide();
-
-          break;
-
-
-        case "ArrowLeft":
-        case "PageUp":
-
-          event.preventDefault();
-
-          previousSlide();
-
-          break;
-
-
-        case "Home":
-
-          event.preventDefault();
-
-          showSlide(0);
-
-          break;
-
-
-        case "End":
-
-          event.preventDefault();
-
-          showSlide(slides.length - 1);
-
-          break;
-
-      }
-
-      return;
-    }
-
-
-    /*
-       DESKTOP
-    */
 
     switch (event.key) {
 
+
       case "ArrowRight":
+
       case "ArrowDown":
+
       case "PageDown":
+
       case " ":
 
         event.preventDefault();
@@ -3632,7 +4278,9 @@ document.addEventListener(
 
 
       case "ArrowLeft":
+
       case "ArrowUp":
+
       case "PageUp":
 
         event.preventDefault();
@@ -3655,7 +4303,9 @@ document.addEventListener(
 
         event.preventDefault();
 
-        showSlide(slides.length - 1);
+        showSlide(
+          slides.length - 1
+        );
 
         break;
 
@@ -3666,29 +4316,44 @@ document.addEventListener(
 
 
 /* =========================================================
-   CLIQUE — SOMENTE DESKTOP
+   CLIQUE DESKTOP
 ========================================================= */
 
 document.addEventListener(
   "click",
   function(event) {
 
+
     /*
-       No mobile o clique não troca slide.
-       O usuário navega verticalmente pelo conteúdo.
+       Não navega quando o clique
+       acontece nos controles.
     */
-
-    if (isMobileLayout()) {
-      return;
-    }
-
 
     if (
       event.target.closest(
         "button, a, input, textarea, select"
       )
     ) {
+
       return;
+
+    }
+
+
+    /*
+       No mobile o clique lateral
+       não troca de slide.
+       Usamos swipe ou botões.
+    */
+
+    if (
+      window.matchMedia(
+        "(max-width: 700px)"
+      ).matches
+    ) {
+
+      return;
+
     }
 
 
@@ -3696,11 +4361,14 @@ document.addEventListener(
       window.innerWidth / 2;
 
 
-    if (event.clientX > middle) {
+    if (
+      event.clientX > middle
+    ) {
 
       nextSlide();
 
-    } else {
+    }
+    else {
 
       previousSlide();
 
@@ -3715,6 +4383,7 @@ document.addEventListener(
 ========================================================= */
 
 let touchStartX = 0;
+
 let touchStartY = 0;
 
 
@@ -3722,14 +4391,22 @@ document.addEventListener(
   "touchstart",
   function(event) {
 
+
+    const touch =
+      event.changedTouches[0];
+
+
     touchStartX =
-      event.changedTouches[0].screenX;
+      touch.screenX;
+
 
     touchStartY =
-      event.changedTouches[0].screenY;
+      touch.screenY;
 
   },
-  { passive: true }
+  {
+    passive: true
+  }
 );
 
 
@@ -3737,37 +4414,36 @@ document.addEventListener(
   "touchend",
   function(event) {
 
-    /*
-       No mobile, swipe horizontal pode
-       continuar sendo usado para trocar
-       de slide.
 
-       Swipe vertical permanece reservado
-       para o scroll natural da página.
-    */
+    const touch =
+      event.changedTouches[0];
+
 
     const touchEndX =
-      event.changedTouches[0].screenX;
+      touch.screenX;
+
 
     const touchEndY =
-      event.changedTouches[0].screenY;
+      touch.screenY;
 
 
     const distanceX =
       touchEndX - touchStartX;
+
 
     const distanceY =
       touchEndY - touchStartY;
 
 
     /*
-       Se o movimento vertical for maior,
-       não interferimos no scroll.
+       Se o movimento vertical
+       predominar, o navegador mantém
+       o scroll vertical normalmente.
     */
 
     if (
-      Math.abs(distanceY) >
-      Math.abs(distanceX)
+      Math.abs(distanceX) <
+      Math.abs(distanceY)
     ) {
 
       return;
@@ -3775,51 +4451,36 @@ document.addEventListener(
     }
 
 
-    if (Math.abs(distanceX) < 50) {
+    /*
+       Distância mínima para reconhecer
+       o swipe.
+    */
+
+    if (
+      Math.abs(distanceX) < 50
+    ) {
 
       return;
 
     }
 
 
-    if (distanceX < 0) {
+    if (
+      distanceX < 0
+    ) {
 
       nextSlide();
 
-    } else {
+    }
+    else {
 
       previousSlide();
 
     }
 
   },
-  { passive: true }
-);
-
-
-/* =========================================================
-   RESPONSIVIDADE EM TEMPO REAL
-========================================================= */
-
-window.addEventListener(
-  "resize",
-  function() {
-
-    /*
-       Não precisamos reconstruir os slides.
-       O CSS controla toda a adaptação.
-
-       Apenas garantimos que o índice atual
-       continue válido.
-    */
-
-    if (currentSlide >= slides.length) {
-
-      currentSlide =
-        slides.length - 1;
-
-    }
-
+  {
+    passive: true
   }
 );
 
@@ -3832,5 +4493,7 @@ showSlide(0);
 
 </script>
 
+
 </body>
+
 </html>
